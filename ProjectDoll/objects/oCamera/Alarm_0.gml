@@ -1,0 +1,3 @@
+/// @description Shake
+screenShake = false;
+
