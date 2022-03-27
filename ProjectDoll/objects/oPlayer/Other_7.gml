@@ -1,11 +1,17 @@
 /// @description Combo's
-if Combo > 3
+if IsAttacking
 {
-	Combo = 0;
-}
-else
-{
-	Combo++;
-	IsAttacking = false;
-	alarm[0] = 10;
+	if Combo == 2
+	{
+		Combo = 0;
+		IsAttacking = false;
+		state = "IDLE";
+	}
+	else
+	{
+		Combo++;
+		IsAttacking = false;
+		state = "IDLE";
+		alarm[2] = 10;
+	}
 }

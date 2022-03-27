@@ -39,13 +39,13 @@ switch (state) {
 	case "LATTACK":
 		switch(Combo)
 		{
-			case(1):
+			case(0):
 				sprite_index = sLCombo1;
 			break;
-			case(2):
+			case(1):
 				sprite_index = sLCombo2;
 			break;
-			case(3):
+			case(2):
 				sprite_index = sLCombo3;
 			break;
 		}
@@ -68,6 +68,8 @@ else
 	else
 	draw_sprite_ext(sprite_index, image_index, x, y, facing * xscale, yscale, 0, c_purple, image_alpha);
 }
+
+draw_text(x, y - 36, Combo);
 
 /*
 	if (onGround)

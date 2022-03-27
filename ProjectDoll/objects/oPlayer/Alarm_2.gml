@@ -1,2 +1,9 @@
 /// @description Reset Combo
-Combo = 0;
+if !IsAttacking
+{
+	Combo = 0;
+}
+else
+{
+	alarm[2] = 10;
+}
