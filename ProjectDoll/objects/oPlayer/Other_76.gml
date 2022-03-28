@@ -7,10 +7,67 @@ if (state == "RUN")
             direction = 90 + random_range(-45, 45); 
 }
 
-if (event_data[? "message"] == "Player_Forward")
+if (event_data[? "message"] == "Player_Forward_Big")
 {
-    facing = RIGHT;
-        h = Approach(h, 20, groundFric);   
-    h = Approach(h, 120, groundAccel);
+	if onGround		
+	if facing == RIGHT
+	{
+	    h = Approach(h, 30, groundFric);   
+		h = Approach(h, 120, groundAccel);
+	}
+	else
+	{
+	    h = Approach(h, -30, groundFric);   
+		h = Approach(h, 120, groundAccel);
+	}
+
 }
 
+if (event_data[? "message"] == "Player_Forward_Small")
+{
+	if onGround
+	if facing == RIGHT
+	{
+	    h = Approach(h, 10, groundFric);   
+		h = Approach(h, 120, groundAccel);
+	}
+	else
+	{
+	    h = Approach(h, -10, groundFric);   
+		h = Approach(h, 120, groundAccel);
+	}
+}
+
+
+if (event_data[? "message"] == "Player_Forward_Massive")
+{
+	if onGround
+	if facing == RIGHT
+	{
+	    h = Approach(h, 60, groundFric);   
+		h = Approach(h, 120, groundAccel);
+	}
+	else
+	{
+	    h = Approach(h, -60, groundFric);   
+		h = Approach(h, 120, groundAccel);
+	}
+}
+
+
+if (event_data[? "message"] == "Player_Launch")
+{
+	if onGround
+	    v = Approach(v,  -100, airFric);   
+		v = Approach(v, 100.0, airAccel);
+		
+		dir = 0;
+		
+		ComboReset();
+}
+
+
+if (event_data[? "message"] == "Small_Shake")
+{
+	ShakeCamera(2,4);
+}

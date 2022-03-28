@@ -1,9 +1,10 @@
 /// @description Reset Combo
-if !IsAttacking
+if ((!IsAttacking) && (onGround))
 {
-	Combo = 0;
+	ComboReset();
+	ComboFinisher = false;
 }
 else
 {
-	alarm[2] = 10;
+	alarm[2] = 30;
 }

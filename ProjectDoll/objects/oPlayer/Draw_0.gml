@@ -11,6 +11,9 @@ sLCombo2 = sPlayerSpiderBaseCombo2;
 sLCombo3 = sPlayerSpiderBaseCombo3;
 //sParry = sPlayerParry;
 //sDeath = sPlayerDeath;
+		var ComboString = string(ComboArray[0]) +  string(ComboArray[1]) +  string(ComboArray[2]);
+		draw_text(x, y - 80, ComboString);
+
 
 switch (state) {
     case "IDLE": 
@@ -36,17 +39,27 @@ switch (state) {
         if (cRight || cLeft)
             sprite_index = sSlide;  
     break;
-	case "LATTACK":
-		switch(Combo)
+	case "ATTACK":
+
+		switch(ComboString)
 		{
-			case(0):
+			case ("1-1-1"):
 				sprite_index = sLCombo1;
 			break;
-			case(1):
+			case("11-1"):
 				sprite_index = sLCombo2;
 			break;
-			case(2):
+			case("111"):
 				sprite_index = sLCombo3;
+			break;
+			case ("2-1-1"):
+				sprite_index = sPlayerSpiderBaseCombo4;
+			break;
+			case("12-1"):
+				sprite_index = sPlayerSpiderBaseCombo4;
+			break;
+			case("112"):
+				sprite_index = sPlayerSpiderBaseCombo4;
 			break;
 		}
 
@@ -57,9 +70,39 @@ switch (state) {
 // Draw player
 
 if global.Staggered = false
-{
+{	
+	if ((IsAttacking) && (!onGround))
+	{
+		if facing == RIGHT
+		{
+			if mouse_x >= x
+			{
+				draw_sprite_ext(sprite_index, image_index, x, y, facing * 1, 1, dir, c_white, image_alpha);
+			}
+			else
+			{
+				draw_sprite_ext(sprite_index, image_index, x, y, facing * 1, -1, dir, c_white, image_alpha);
 
-	draw_sprite_ext(sprite_index, image_index, x, y, facing * 1, 1, 0, c_white, image_alpha);
+			}
+			
+		}
+		else
+		{
+			if mouse_x >= x
+			{
+				draw_sprite_ext(sprite_index, image_index, x, y, facing * -1, 1, dir, c_white, image_alpha);
+			}
+			else
+			{
+				draw_sprite_ext(sprite_index, image_index, x, y, facing * -1, -1, dir, c_white, image_alpha);
+			}
+		}
+		
+	}
+	else
+	{
+		draw_sprite_ext(sprite_index, image_index, x, y, facing * 1, 1, 0, c_white, image_alpha);
+	}
 }
 else
 {
@@ -69,7 +112,10 @@ else
 	draw_sprite_ext(sprite_index, image_index, x, y, facing * xscale, yscale, 0, c_purple, image_alpha);
 }
 
-draw_text(x, y - 36, Combo);
+
+
+
+
 
 /*
 	if (onGround)

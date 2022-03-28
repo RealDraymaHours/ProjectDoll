@@ -1,17 +1,22 @@
 /// @description Combo's
 if IsAttacking
 {
-	if Combo == 2
+	if ComboEnd()
 	{
-		Combo = 0;
+		if onGround
+		{
+			ComboReset();
+		}		
+		
+		ComboFinisher = true;
 		IsAttacking = false;
 		state = "IDLE";
 	}
 	else
 	{
-		Combo++;
+		//ComboAdd(3,1);
 		IsAttacking = false;
 		state = "IDLE";
-		alarm[2] = 10;
+		alarm[2] = 30;
 	}
 }

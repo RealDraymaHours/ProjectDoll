@@ -9,8 +9,8 @@ Intensity = 1;
 //base_width = 1920/6;
 //base_height = 1080/6;
 
-view_width = 3456/6;
-view_height = 1800/6;
+view_width = 3456/5;
+view_height = 1800/5;
 
 window_scale = 3;
 

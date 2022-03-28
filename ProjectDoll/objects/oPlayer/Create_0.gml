@@ -63,7 +63,10 @@ clingTime   = 4.0  * m;
 
 // State Info /////////////////////////////////////////////////////////////////
 // States
-Combo = 0;
+ComboCounter = 0;
+ComboArray = [-1,-1,-1];
+ComboFinisher = false;
+dir = 0;
 
 // Facings
 RIGHT =  1;
@@ -74,10 +77,10 @@ state  = "IDLE"
 facing = image_xscale; // Change xscale in editor to adjust initial facing
 
 // For squash + stretch
-/*
+
 xscale = 1;
 yscale = 1;
-*/
+
 ///////////////////////////////////////////////////////////////////////////////
 
 // Misc ///////////////////////////////////////////////////////////////////////
@@ -99,6 +102,7 @@ w1 = 3;
 w2 = 5; //0;
 c1 = c_white
 c2 = c_white
+
 
 
 

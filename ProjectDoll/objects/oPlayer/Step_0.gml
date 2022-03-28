@@ -106,6 +106,7 @@ if (kJump && cLeft && !onGround) {
     // Stretch sprite
     xscale = 0.66;
     yscale = 1.33;     
+	Combo = 0;
       
     
     // Wall jump is different when pushing off/towards the wall        
@@ -137,17 +138,17 @@ if (kJump && cRight && !onGround) {
   
 // Jump
 if (kJump && onGround) {
+	ComboReset();
     if (onGround || (!cRight && !cLeft)) {
         // Stretch sprite 
-		/*
+		
         xscale = 0.66;
         yscale = 1.33;
-        */
+        
+		ComboReset();
 		
-		global.LeftCombo = 0;
-		global.RightCombo = 0;
         v = -jumpHeight;
-        state = "IDLE";
+ 
     }
 } else {
     // Variable hop
@@ -214,10 +215,36 @@ if Parry = true
 //Attacking
 if(kAttackLight)
 {
-	state = "LATTACK";	
+	if ComboEnd() == false
+	{
+		state = "ATTACK";	
+		image_index = 0;
+	
+		ComboAdd(3,1);
+	
+		dir = point_direction(x,y,mouse_x,mouse_y);	
+		IsAttacking = true;
+		if mouse_x <= x
+		{
+			facing = LEFT;
+		}
+		else
+		{
+			facing = RIGHT;	
+		}
+	}
+	
+		
+}
+else if(kAttackHeavy)
+{
+	if ComboEnd() = false
+	state = "ATTACK";
 	image_index = 0;
 	IsAttacking = true;
+	ComboAdd(3,2);
 }
+
 }
 else
 {
