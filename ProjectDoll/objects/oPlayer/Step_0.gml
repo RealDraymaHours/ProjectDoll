@@ -1,5 +1,5 @@
 // Declare Temp Variables /////////////////////////////////////////////////////
-var kLeft, kRight, kUp, kDown, kJump, kJumpRelease, kAttackLight, kAttackHeavy, tempAccel, tempFric;
+var kLeft, kRight, kUp, kDown, kJump, kJumpRelease, kAttackLight, kAttackHeavy, kDash, tempAccel, tempFric;
 ///////////////////////////////////////////////////////////////////////////////
 
 // Input //////////////////////////////////////////////////////////////////////
@@ -10,14 +10,14 @@ kUp          = keyboard_check(ord("W"));
 kDown        = keyboard_check(ord("S"));
 kJump        = keyboard_check_pressed(vk_space);
 kJumpRelease = keyboard_check_released(vk_space);
+kDash		 = keyboard_check(vk_lshift);
 kAttackLight = mouse_check_button(mb_left);
 kAttackHeavy = mouse_check_button(mb_right);
 //kWarp		 = keyboard_check_pressed(vk_lshift); //mouse_check_button_released(mb_right);
 
 
-if !IsAttacking
+if ((!IsAttacking) && (state != "DASH"))
 {
-
 ///////////////////////////////////////////////////////////////////////////////
 // Which form of accel/fric to apply
 if (onGround) {	
@@ -213,15 +213,17 @@ if Parry = true
 */
 
 //Attacking
-if(kAttackLight)
+if ComboEnd() == false
 {
-	if ComboEnd() == false
+	if(kAttackLight)
 	{
+		
 		state = "ATTACK";	
 		image_index = 0;
-	
+		
 		ComboAdd(3,1);
-	
+		ComboCounter++;
+		
 		dir = point_direction(x,y,mouse_x,mouse_y);	
 		IsAttacking = true;
 		if mouse_x <= x
@@ -233,18 +235,39 @@ if(kAttackLight)
 			facing = RIGHT;	
 		}
 	}
-	
-		
+	else if(kAttackHeavy)
+	{
+		state = "ATTACK";
+		image_index = 0;
+		ComboAdd(3,2);
+		ComboCounter++;
+		IsAttacking = true;
+	}
 }
-else if(kAttackHeavy)
+//Dashing
+if(kDash)
 {
-	if ComboEnd() = false
-	state = "ATTACK";
-	image_index = 0;
-	IsAttacking = true;
-	ComboAdd(3,2);
+	if CanDash
+	{
+		state = "DASH";
+	}
 }
 
+
+}
+else if (state == "DASH")
+{
+	if (!isDashing)
+	{
+		DashX = mouse_x;
+		DashY = mouse_y;
+		CanDash = false;
+		h = 0;
+		v = 0;
+		isDashing = true;
+		move_towards_point(DashX,DashY,16);
+		alarm[3] = 10;
+	}
 }
 else
 {

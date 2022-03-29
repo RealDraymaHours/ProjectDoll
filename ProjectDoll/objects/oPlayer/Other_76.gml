@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor			
+/// Momentum
 if (event_data[? "message"] == "Player_Step")
 {
 if (state == "RUN")
@@ -66,8 +65,28 @@ if (event_data[? "message"] == "Player_Launch")
 		ComboReset();
 }
 
+///////////////////////////////////////////////////////////////////////////////////
 
-if (event_data[? "message"] == "Small_Shake")
+///Hitboxes  
+//Spider
+if (event_data[? "message"] == "sPlayerSpiderBaseCombo1HitBox_Create")
 {
-	ShakeCamera(2,4);
+	setPlayerHitbox(x,y,10,60,10,sPlayerSpiderBaseComboHitBox1);
 }
+
+if (event_data[? "message"] == "sPlayerSpiderBaseCombo2HitBox_Create")
+{
+	setPlayerHitbox(x,y,10,60,10,sPlayerSpiderBaseComboHitBox2);
+}
+
+
+if (event_data[? "message"] == "sPlayerSpiderBaseCombo3HitBox_Create")
+{
+	setPlayerHitbox(x,y,10,60,10,sPlayerSpiderBaseComboHitBox3);
+}
+
+if (event_data[? "message"] == "sPlayerSpiderBaseCombo4HitBox_Create")
+{
+	setPlayerHitbox(x,y,10,60,10,sPlayerSpiderBaseComboHitBox4);
+}
+

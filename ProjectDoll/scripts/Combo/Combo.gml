@@ -3,6 +3,7 @@
 function ComboReset()
 {
 	oPlayer.ComboArray = [-1,-1,-1];
+	oPlayer.ComboCounter = -1;
 }
 
 function ComboGetSprite(Array, Index)

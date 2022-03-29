@@ -6,13 +6,12 @@ sJumpM = sPlayerSpiderJumpM;
 sJumpU = sPlayerSpiderJumpU;
 sSlide = sPlayerSpiderSlide;
 
-sLCombo1 = sPlayerSpiderBaseCombo1;
-sLCombo2 = sPlayerSpiderBaseCombo2;
-sLCombo3 = sPlayerSpiderBaseCombo3;
+
 //sParry = sPlayerParry;
 //sDeath = sPlayerDeath;
 		var ComboString = string(ComboArray[0]) +  string(ComboArray[1]) +  string(ComboArray[2]);
 		draw_text(x, y - 80, ComboString);
+		draw_text(x, y - 180, state);
 
 
 switch (state) {
@@ -41,26 +40,27 @@ switch (state) {
     break;
 	case "ATTACK":
 
-		switch(ComboString)
+		if ComboCounter != -1
 		{
-			case ("1-1-1"):
-				sprite_index = sLCombo1;
-			break;
-			case("11-1"):
-				sprite_index = sLCombo2;
-			break;
-			case("111"):
-				sprite_index = sLCombo3;
-			break;
-			case ("2-1-1"):
+			if (ComboArray[ComboCounter] == 1)
+			{
+				switch(ComboCounter)
+				{
+					case(0):
+						sprite_index = sPlayerSpiderBaseCombo1;
+					break;
+					case(1):
+						sprite_index = sPlayerSpiderBaseCombo2;
+					break;
+					case(2):
+						sprite_index = sPlayerSpiderBaseCombo3;
+					break;
+				}
+			}
+			else if (ComboArray[ComboCounter] == 2)
+			{
 				sprite_index = sPlayerSpiderBaseCombo4;
-			break;
-			case("12-1"):
-				sprite_index = sPlayerSpiderBaseCombo4;
-			break;
-			case("112"):
-				sprite_index = sPlayerSpiderBaseCombo4;
-			break;
+			}
 		}
 
 	break;
@@ -78,10 +78,14 @@ if global.Staggered = false
 			if mouse_x >= x
 			{
 				draw_sprite_ext(sprite_index, image_index, x, y, facing * 1, 1, dir, c_white, image_alpha);
+				YS = 1;
+				XS = facing * 1
 			}
 			else
 			{
 				draw_sprite_ext(sprite_index, image_index, x, y, facing * 1, -1, dir, c_white, image_alpha);
+				YS = -1;
+				XS = facing * 1
 
 			}
 			
@@ -91,10 +95,14 @@ if global.Staggered = false
 			if mouse_x >= x
 			{
 				draw_sprite_ext(sprite_index, image_index, x, y, facing * -1, 1, dir, c_white, image_alpha);
+				YS = 1;
+				XS = facing * -1
 			}
 			else
 			{
 				draw_sprite_ext(sprite_index, image_index, x, y, facing * -1, -1, dir, c_white, image_alpha);
+				YS = -1;
+				XS = facing * -1
 			}
 		}
 		
@@ -102,6 +110,9 @@ if global.Staggered = false
 	else
 	{
 		draw_sprite_ext(sprite_index, image_index, x, y, facing * 1, 1, 0, c_white, image_alpha);
+		YS = 1;
+		XS = facing * 1
+		dir = 0;
 	}
 }
 else

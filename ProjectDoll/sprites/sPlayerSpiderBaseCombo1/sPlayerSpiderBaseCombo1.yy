@@ -67,7 +67,10 @@
     "volume": 1.0,
     "length": 4.0,
     "events": {"Keyframes":[
-        {"id":"d91ec4db-4e31-4b26-afd9-6257968ec672","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
+        {"id":"21029107-5694-4b67-aee8-156fc25a1c00","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
+                "sPlayerSpiderBaseCombo1HitBox_Create",
+              ],"resourceVersion":"1.0","resourceType":"MessageEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MessageEventKeyframe>",},
+        {"id":"df1f95d1-ebad-415e-8e4d-7a2436f7b305","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
                 "Player_Forward_Small",
               ],"resourceVersion":"1.0","resourceType":"MessageEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MessageEventKeyframe>",},
       ],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},

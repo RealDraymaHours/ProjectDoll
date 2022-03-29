@@ -61,16 +61,22 @@ gravSlide   = 0.0 * m;
 clingTime   = 4.0  * m;
 ///////////////////////////////////////////////////////////////////////////////
 
-// State Info /////////////////////////////////////////////////////////////////
-// States
-ComboCounter = 0;
+// Combo
+ComboCounter = -1;
 ComboArray = [-1,-1,-1];
 ComboFinisher = false;
 dir = 0;
 
+//Dashing Values
+DashX = 0;
+DashY = 0;
+isDashing = false;
+CanDash = true;
+
 // Facings
 RIGHT =  1;
 LEFT  = -1;
+YS = 0;
 
 // Initialize properties
 state  = "IDLE"

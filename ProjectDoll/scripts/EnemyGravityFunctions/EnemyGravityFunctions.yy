@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Combat",
-    "path": "folders/Scripts/Combat.yy",
+    "name": "Enemy",
+    "path": "folders/Scripts/Enemy.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Damage",
+  "name": "EnemyGravityFunctions",
   "tags": [],
   "resourceType": "GMScript",
 }
