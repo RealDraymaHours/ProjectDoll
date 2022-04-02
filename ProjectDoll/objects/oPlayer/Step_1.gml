@@ -10,6 +10,7 @@ onGround = OnGround();
 // Squash sprite during jump landing
 if (!temp && onGround) {
     if (v >= 0) { 
+		ComboReset();
         yscale = 0.66;
         xscale = 1.33;  
     }

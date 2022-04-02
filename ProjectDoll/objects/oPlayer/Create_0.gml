@@ -16,16 +16,9 @@ sSlide = sPlayerSpiderSlide;
 
 //Abilities
 Parry = false;
-CanWarp = false;
-Warping = false;
 
 
-//Combo Stuff
-CanLeft = true;
-CanRight = true;
-Can1 = true;
-Can2 = true;
-IsAttacking = false;
+
 
 // Collision below
 onGround = false;
@@ -65,7 +58,13 @@ clingTime   = 4.0  * m;
 ComboCounter = -1;
 ComboArray = [-1,-1,-1];
 ComboFinisher = false;
+CanCombo = true;
 dir = 0;
+IsAttacking = false;
+
+//RageArts
+RageArtsArray = [-1,-1,-1,-1,-1,-1,-1,-1,-1];
+RageArtActivated = false;
 
 //Dashing Values
 DashX = 0;

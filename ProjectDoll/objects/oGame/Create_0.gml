@@ -14,8 +14,8 @@
 global.Health = 5;
 global.MaxHealth = 5;
 global.Staggered = false;
-global.Mana = 10;
-global.MaxMana = 10;
+global.Mana = 0;
+global.MaxMana = 100;
 
 //UI
 /*
@@ -46,4 +46,6 @@ randomize();
 //Start Savefiles
 
 SaveBellLady(0);
+*/
+alarm[0] = 10;
 

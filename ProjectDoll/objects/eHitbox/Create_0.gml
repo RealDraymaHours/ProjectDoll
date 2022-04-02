@@ -5,6 +5,8 @@ ySize = 1;
 Caster = e;
 
 Stunned = true;
+Damage = 0;
+
 Staggered = true
 StaggerTime = 0;
 StatsSet = false;

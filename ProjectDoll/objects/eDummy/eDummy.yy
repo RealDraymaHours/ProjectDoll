@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sPlayerRunTemp",
-    "path": "sprites/sPlayerRunTemp/sPlayerRunTemp.yy",
+    "name": "sPlushNormal",
+    "path": "sprites/sPlushNormal/sPlushNormal.yy",
   },
   "solid": false,
   "visible": true,
@@ -29,6 +29,7 @@
     {"isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

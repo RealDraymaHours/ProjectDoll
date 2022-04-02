@@ -1,0 +1,2 @@
+if MoveDown
+EnemyEndStepGravity(self);

@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "SpiderBaseCombo",
-    "path": "folders/Sprites/Player/SpiderPlayer/SpiderBaseCombo.yy",
+    "name": "Hitboxes",
+    "path": "folders/Sprites/Player/SpiderPlayer/SpiderBaseCombo/Hitboxes.yy",
   },
   "resourceVersion": "1.0",
   "name": "sPlayerSpiderBaseComboHitBox1",

@@ -35,12 +35,7 @@ if (Enemy.onGround) {
     Enemy.tempAccel = Enemy.airAccel;
     Enemy.tempFric  = Enemy.airFric;
 }
-
-// Stick to wall //////////////////////////////////////////////////////////////
-if ((!Enemy.cRight && !Enemy.cLeft) || Enemy.onGround) {
-    Enemy.canStick = true;
-    Enemy.sticking = false;
-}   
+ 
 ///////////////////////////////////////////////////////////////////////////////
 
 // Gravity ////////////////////////////////////////////////////////////////////
@@ -98,14 +93,19 @@ for (i = 0; i < abs(Enemy.h); ++i) {
 }	
 }
 
-function VerticalKnockback(acc, fric, target)
+function EnemyKnockback(acc, fric, target, VorH)
 {
-	
-}
-
-function HorizontalKnockback(acc, fric,target)
-{
-	//right
+	if VorH == "H"
+	{
+		//right
 		target.h = Approach(target.h, fric, target.groundFric);   
 		target.h = Approach(target.h, acc, target.groundAccel);
+		target.v = 0;   
+		target.v = 0;
+	}
+	else
+	{
+		target.v = Approach(target.v, fric, target.airFric);   
+		target.v = Approach(target.v, acc, target.airAccel);
+	}
 }

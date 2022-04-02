@@ -45,18 +45,24 @@ function DamageEnemy(Enemy, Hitbox)
 		global.Mana += 1;
 	}
 	
-	sound = irandom(2);
+	sound = irandom(4);
 	
 	switch(sound)
 	{
 		case(0):
-			audio_play_sound(PlayerWeaponHit1,1,false);
+			audio_play_sound(SwordHit1,1,false);
 		break;
 		case(1):
-			audio_play_sound(PlayerWeaponHit2,1,false);
+			audio_play_sound(SwordHit2,1,false);
 		break;
 		case(2):
-			audio_play_sound(PlayerWeaponHit3,1,false);
+			audio_play_sound(SwordHit3,1,false);
+		break;
+		case(3):
+			audio_play_sound(SwordHit4,1,false);
+		break;
+		case(4):
+			audio_play_sound(SwordHit5,1,false);
 		break;
 	}
 }

@@ -1,13 +1,22 @@
 /// @description base stats
-Health = 0;
+Health = 100;
 Active = false;
 state = "IDLE";
+
 
 
 Staggered = false;
 StaggerTime = 10;
 Poise = 0;
+
+FinisherMeter = 100;
+FinisherMeterRegenAmount = 0;
+FinisherMeterRegenTime = 100;
+
 Knockback = false;
+KnockbackAcc = 0;
+KnockbackFric = 0;
+KnockbackDir = "H";
 
 //physics
 // Movement speed
@@ -40,4 +49,6 @@ cLeft  = 0;
 cRight = 0;
 cAbove = 0;
 
-alarm[0] = 10;
+
+alarm[0] = 1;
+alarm[9] = 1;

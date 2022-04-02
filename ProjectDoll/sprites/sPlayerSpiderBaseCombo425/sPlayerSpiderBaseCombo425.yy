@@ -146,8 +146,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "SpiderBaseCombo",
-    "path": "folders/Sprites/Player/SpiderPlayer/SpiderBaseCombo.yy",
+    "name": "Base",
+    "path": "folders/Sprites/Player/SpiderPlayer/SpiderBaseCombo/Base.yy",
   },
   "resourceVersion": "1.0",
   "name": "sPlayerSpiderBaseCombo425",

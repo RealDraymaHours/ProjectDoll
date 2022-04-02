@@ -1,18 +1,25 @@
 // Declare Temp Variables /////////////////////////////////////////////////////
-var kLeft, kRight, kUp, kDown, kJump, kJumpRelease, kAttackLight, kAttackHeavy, kDash, tempAccel, tempFric;
+var kLeft, kRight, kUp, kDown, kJump, kJumpRelease, tempAccel, tempFric;
+var  kAttackLight, kAttackHeavy, kDash, kRageArt,kAttackLightReleased, kAttackHeavyReleased;
 ///////////////////////////////////////////////////////////////////////////////
 
 // Input //////////////////////////////////////////////////////////////////////
 
 kLeft        = keyboard_check(ord("A"));
 kRight       = keyboard_check(ord("D"));
-kUp          = keyboard_check(ord("W"));
+//kUp          = keyboard_check(ord("W"));
 kDown        = keyboard_check(ord("S"));
 kJump        = keyboard_check_pressed(vk_space);
 kJumpRelease = keyboard_check_released(vk_space);
 kDash		 = keyboard_check(vk_lshift);
+
 kAttackLight = mouse_check_button(mb_left);
 kAttackHeavy = mouse_check_button(mb_right);
+
+kAttackLightReleased = mouse_check_button_released(mb_left);
+kAttackHeavyReleased = mouse_check_button_released(mb_right);
+
+kRageArt     = keyboard_check(ord("W"));
 //kWarp		 = keyboard_check_pressed(vk_lshift); //mouse_check_button_released(mb_right);
 
 
@@ -37,6 +44,7 @@ if ((!cRight && !cLeft) || onGround) {
 // Cling to wall
 if (((kRight && cLeft) || (kLeft && cRight)) && canStick && !onGround) {
     alarm[0] = clingTime;
+	ComboReset();
     sticking = true; 
     canStick = false;       
 }
@@ -212,47 +220,78 @@ if Parry = true
 }
 */
 
-//Attacking
-if ComboEnd() == false
+//Attacking and Rage arts
+if (kRageArt)
 {
-	if(kAttackLight)
+	if ((kAttackLightReleased) && (global.Mana >= 10))
 	{
-		
-		state = "ATTACK";	
-		image_index = 0;
-		
-		ComboAdd(3,1);
-		ComboCounter++;
-		
-		dir = point_direction(x,y,mouse_x,mouse_y);	
+		state = "RAGEART";
+		ComboReset();
 		IsAttacking = true;
-		if mouse_x <= x
-		{
-			facing = LEFT;
-		}
-		else
-		{
-			facing = RIGHT;	
-		}
+		global.Mana -= 10;
 	}
-	else if(kAttackHeavy)
+	else if(kAttackHeavyReleased)
 	{
-		state = "ATTACK";
-		image_index = 0;
-		ComboAdd(3,2);
-		ComboCounter++;
-		IsAttacking = true;
+			
 	}
 }
+else
+{
+	if (ComboEnd() == false)
+	{
+		if(kAttackLight)
+		{
+			state = "ATTACK";	
+			image_index = 0;
+		
+			ComboAdd(3,1);
+			ComboCounter++;
+		
+			dir = point_direction(x,y,mouse_x,mouse_y);	
+			IsAttacking = true;
+			if mouse_x <= x
+			{
+					facing = LEFT;
+			}
+			else
+			{
+				facing = RIGHT;	
+			}
+
+		}
+		else if(kAttackHeavy)
+		{
+			state = "ATTACK";
+			image_index = 0;
+			ComboAdd(3,2);
+			ComboCounter++;
+			IsAttacking = true;
+			dir = point_direction(x,y,mouse_x,mouse_y);	
+			
+			if mouse_x <= x
+			{
+					facing = LEFT;
+			}
+			else
+			{
+				facing = RIGHT;	
+			}
+			
+		}
+		
+
+	}	
+}
+
 //Dashing
 if(kDash)
 {
 	if CanDash
 	{
 		state = "DASH";
+		dir = point_direction(x,y,mouse_x,mouse_y);	
 	}
 }
-
 
 }
 else if (state == "DASH")

@@ -5,7 +5,7 @@ var i;
 for (i = 0; i < abs(v); ++i) {
     if (!place_meeting(x, y + sign(v), oParSolid))
         y += sign(v);
-    else {
+    else {	
         v = 0;
         break;
     }
@@ -19,7 +19,7 @@ for (i = 0; i < abs(h); ++i) {
     
     // DOWN slope
     if (!place_meeting(x + sign(h), y, oParSolid) && !place_meeting(x + sign(h), y + 1, oParSolid) && place_meeting(x + sign(h), y + 2, oParSolid))
-        y = ++y;      
+        y = ++y;
         
     if (!place_meeting(x + sign(h), y, oParSolid))
         x += sign(h); 

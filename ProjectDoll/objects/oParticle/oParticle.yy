@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Player",
-    "path": "folders/Objects/Player.yy",
+    "name": "Particles",
+    "path": "folders/Objects/Particles.yy",
   },
   "resourceVersion": "1.0",
   "name": "oParticle",
