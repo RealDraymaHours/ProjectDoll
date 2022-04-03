@@ -1,2 +1,9 @@
 /// @description reset dash
-CanDash = true;
+if onGround
+{
+	CanDash = true;
+}
+else
+{
+	alarm[4] = 1;
+}

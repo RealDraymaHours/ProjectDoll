@@ -103,10 +103,6 @@ sticking = false;
 
 
 length = 6; //4;
-w1 = 3;
-w2 = 5; //0;
-c1 = c_white
-c2 = c_white
 
 
 
@@ -117,4 +113,24 @@ Staggered = false;
 audio_listener_orientation(0,1,0,0,0,1);
 
 
+/////////////////////////////////////////////////////////////
+//Buttons
+// Declare Temp Variables /////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
+// Input //////////////////////////////////////////////////////////////////////
+
+kMyLeft        = vk_left;
+kMyRight       = vk_right;
+kMyUp          = vk_up;
+kMyDown        = vk_down;
+kMyJump        = vk_space;
+kMyDash		 =   vk_lshift;
+
+kMyAttackLight = ord("S");
+kMyAttackHeavy = ord("D");
+
+kMyRageArt     = ord("A");
+
+LoadButtonMapping();
 

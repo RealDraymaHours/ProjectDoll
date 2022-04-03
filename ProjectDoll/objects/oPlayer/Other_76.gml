@@ -193,11 +193,26 @@ if (event_data[? "message"] == "sPlayerSpiderHeavyCombo2HitBox_Create")
 
 if (event_data[? "message"] == "sPlayerSpiderRACombo1HitBox_Create")
 {
-	setPlayerHitbox(x,y,20, 20,0,"V",-15,100,10,sPlayerSpiderRAComboHitBox1);
+	setPlayerHitbox(x,y,3, 1,1,"V",-15,100,10,sPlayerSpiderRAComboHitBox1);
 }
 
 if (event_data[? "message"] == "sPlayerSpiderRACombo2HitBox_Create")
 {
 
-	setPlayerHitbox(x,y,3,1,0,"H",0,0,1000,sPlayerSpiderRAComboHitBox2);
+	setPlayerHitbox(x,y,20,20,20,"H",0,0,1000,sPlayerSpiderRAComboHitBox2);
 }
+
+if (event_data[? "message"] == "sPlayerSpiderHeavyAirDownHitBox_Create")
+{
+
+	setPlayerHitbox(x,y,20,20,5,"V",15,100,10,sPlayerSpiderRAComboHitBox2);
+}
+
+
+
+if (event_data[? "message"] == "sPlayerSpiderGroundDownHitBox_Create")
+{
+
+	setPlayerHitbox(x,y,20,20,5,"V",-15,100,10,sPlayerSpiderGroundDownHitBox);
+}
+

@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "Camera",
-    "path": "folders/Scripts/Camera.yy",
+    "path": "folders/Camera.yy",
   },
   "resourceVersion": "1.0",
   "name": "Camera",

@@ -23,9 +23,6 @@ sRA4 = sPlayerSpiderRACombo2;
 
 //sParry = sPlayerParry;
 //sDeath = sPlayerDeath;
-		draw_text(x, y - 80, onGround);
-		draw_text(x, y - 120, facing);		
-		draw_text(x, y - 180, dir);
 
 
 switch (state) {
@@ -57,87 +54,68 @@ switch (state) {
             sprite_index = sSlide;  
     break;
 	case "ATTACK":
-
 		if ComboCounter != -1
 		{
-			if (ComboArray[ComboCounter] == 1)
+			switch(ComboArray[ComboCounter])
 			{
-				switch(ComboCounter)
-				{
-					case(0):
-						sprite_index = sBase1;
-					break;
-					case(1):
-						sprite_index = sBase2;
-					break;
-					case(2):
-						sprite_index = sBase3;
-					break;
-				}
-			}
-			else
-			{
-				if !onGround
-				{
+				case(1):
 					switch(ComboCounter)
 					{
-						case(0):							
-							sprite_index = sHeavy2;
-							ComboForceEnd();
+						case(0):
+							sprite_index = sBase1;
 						break;
 						case(1):
-							sprite_index = sHeavy2;
-							ComboForceEnd();
+							sprite_index = sBase2;
 						break;
 						case(2):
-							sprite_index = sHeavy2;
-							ComboForceEnd();							
+							sprite_index = sBase3;
 						break;
 					}
+				break;
+				case(2):
+				if !onGround
+				{
+					sprite_index = sHeavy2;
+					ComboForceEnd();
 				}
 				else
 				{
 					sprite_index = sHeavy1;
+					ComboReset();
 				}
+				break;	
+				case(3):
+					if !onGround
+					{
+						sprite_index = sRA2;
+						ComboForceEnd();
+					}
+					else
+					{
+						sprite_index = sRA1;
+						ComboForceEnd();
+					}
+				break;
+				case(4):	
+					if !onGround
+					{
+						sprite_index = sPlayerSpiderAirDown;
+						ComboForceEnd();
+					}
+					else
+					{
+						sprite_index = sPlayerSpiderGroundDown;
+						ComboForceEnd();
+					}
+				break;
 			}
 		}
-	break;
-	case("RAGEART"):
-	{
-		if onGround
-		{
-			sprite_index = sRA1;	
-		}
-		else
-		{
-			sprite_index = sRA2;
-		}
-				
-	}
-
 }
-
 // Draw player
 
 if global.Staggered = false
 {	
-	if ((IsAttacking) && (!onGround))
-	{
-		if facing == RIGHT
-		{
-			draw_sprite_ext(sprite_index, image_index, x, y, facing * 1, 1, dir, c_white, image_alpha);
-			YS = 1;
-			XS = facing * 1
-		}
-		else
-		{
-			draw_sprite_ext(sprite_index, image_index, x, y, facing * -1, -1, dir, c_white, image_alpha);
-			YS = -1;
-			XS = facing * -1	
-		}
-		
-	}
-	else if state == "DASH"
+	if state == "DASH"
 	{
 		draw_sprite_ext(sprite_index, image_index, x, y, 1, 1, dir, c_white, image_alpha);
 	}
