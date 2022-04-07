@@ -1,3 +1,8 @@
+//Parryif (event_data[? "message"] == "Player_Parry_Off")
+{
+	Parry = false;
+}
+
 /// Momentum
 if (event_data[? "message"] == "Player_Step")
 {

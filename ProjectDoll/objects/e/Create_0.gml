@@ -2,7 +2,7 @@
 Health = 100;
 Active = false;
 state = "IDLE";
-
+Stunned = false;
 
 
 Staggered = false;

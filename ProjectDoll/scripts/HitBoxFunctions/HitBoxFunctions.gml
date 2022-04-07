@@ -20,7 +20,13 @@ function setPlayerHitbox(PlayerX,PlayerY,Damage,Stagger, WrathGain,KnockbackDire
 	tempHitBox.StatsSet = true; 
 }
 
-function setEnemyHitbox(EnemyX,EnemyY,Damage,Knockback, HitBoxSprite)
+function setEnemyHitbox(Enemy, Damage,Knockback, HitBoxSprite)
 {
+	tempHitBox = instance_create(Enemy.x, Enemy.y, eHitbox);
 	
+	tempHitBox.Damage = Damage;
+	tempHitBox.sprite_index = HitBoxSprite;
+	tempHitBox.Xscale = Enemy.image_xscale;
+	tempHitBox.Caster = Enemy;
+	tempHitBox.StatsSet = true;
 }

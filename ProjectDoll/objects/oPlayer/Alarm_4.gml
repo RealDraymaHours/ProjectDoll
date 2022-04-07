@@ -1,5 +1,5 @@
 /// @description reset dash
-if onGround
+if ((onGround) || (sprite_index = sSlide))
 {
 	CanDash = true;
 }

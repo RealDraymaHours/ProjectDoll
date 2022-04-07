@@ -75,8 +75,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Sprites/Enemies.yy",
+    "name": "Plush",
+    "path": "folders/Sprites/Enemies/Plush.yy",
   },
   "resourceVersion": "1.0",
   "name": "sPlushStaggeredUp",

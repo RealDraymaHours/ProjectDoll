@@ -1,7 +1,7 @@
 function DamagePlayer(Amount)
 {
 	audio_play_sound(PlayerDamage,10,false);
-	if !global.Staggered
+	if !oPlayer.Staggered
 	{
 		global.Health -= Amount;
 		with (oCamera) {
@@ -13,7 +13,7 @@ function DamagePlayer(Amount)
 			instance_create(otherX, otherY, obj_SoulHit);	
 		}	
 	*/
-		global.Staggered = true;
+		oPlayer.Staggered = true;
 	}	
 }
 

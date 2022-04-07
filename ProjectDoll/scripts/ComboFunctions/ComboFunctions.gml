@@ -51,8 +51,13 @@ function ComboAdd(MaxWeaponCombo, itemType) {
 		//audio_play_sound(mGetItem,10,false);
 		with (oPlayer) ComboArray[_slot] = itemType;
 		return true;
+		
 	}
-	else return false;
+	else
+	{
+		
+		return false;
+	}
 }
 
 

@@ -11,19 +11,21 @@ sBase1 = sPlayerSpiderBaseCombo1;
 sBase2 = sPlayerSpiderBaseCombo2;
 sBase3 = sPlayerSpiderBaseCombo3;
 
-sHeavy1 = sPlayerSpiderHeavyCombo1;
-sHeavy2 = sPlayerSpiderHeavyCombo2;
+sGroundUp = sPlayerSpiderHeavyCombo1;
+sAirUp = sPlayerSpiderRACombo2;
 sHeavy2 = sPlayerSpiderHeavyCombo2;
 
-sRA1 = sPlayerSpiderRACombo1;
-sRA2 = sPlayerSpiderRACombo2;
-sRA3 = sPlayerSpiderRACombo1;
-sRA4 = sPlayerSpiderRACombo2;
+sAirDown = sPlayerSpiderAirDown;
+sGroundDown = sPlayerSpiderGroundDown;
+
+sGroundDir = sPlayerSpiderRACombo1;
+sAirDir = sPlayerSpiderHeavyCombo2;
 
 
 //sParry = sPlayerParry;
 //sDeath = sPlayerDeath;
 
+draw_text(x, y - 64, state);
 
 switch (state) {
     case "IDLE": 
@@ -53,6 +55,9 @@ switch (state) {
         if (cRight || cLeft)
             sprite_index = sSlide;  
     break;
+	case "PARRY":
+		sprite_index = sParry;
+	break;
 	case "ATTACK":
 		if ComboCounter != -1
 		{
@@ -75,36 +80,36 @@ switch (state) {
 				case(2):
 				if !onGround
 				{
-					sprite_index = sHeavy2;
+					sprite_index = sAirUp;
 					ComboForceEnd();
 				}
 				else
 				{
-					sprite_index = sHeavy1;
+					sprite_index = sGroundUp;
 					ComboReset();
 				}
 				break;	
-				case(3):
+				case(4):
 					if !onGround
 					{
-						sprite_index = sRA2;
+						sprite_index = sAirDir;
 						ComboForceEnd();
 					}
 					else
 					{
-						sprite_index = sRA1;
+						sprite_index = sGroundDir;
 						ComboForceEnd();
 					}
 				break;
-				case(4):	
+				case(3):	
 					if !onGround
 					{
-						sprite_index = sPlayerSpiderAirDown;
+						sprite_index = sAirDown;
 						ComboForceEnd();
 					}
 					else
 					{
-						sprite_index = sPlayerSpiderGroundDown;
+						sprite_index = sGroundDown;
 						ComboForceEnd();
 					}
 				break;
@@ -113,7 +118,7 @@ switch (state) {
 }
 // Draw player
 
-if global.Staggered = false
+if !Staggered
 {	
 	if state == "DASH"
 	{

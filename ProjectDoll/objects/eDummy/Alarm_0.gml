@@ -2,6 +2,9 @@
 Health = 100;
 Active = false;
 Knockback = false;
+Stunned = false;
+
+rnd = 0;
 
 ReleaseStuff = false;
 Staggered = false;

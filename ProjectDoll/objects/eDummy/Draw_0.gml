@@ -1,31 +1,15 @@
 draw_self();
-if oPlayer.x >= x
+if state != "SLAM"
 {
-	image_xscale = 1;	
-}
-else
-{
-	image_xscale = -1;
-}
-if state != "DEATH"
-{
-	if v <= -1
+	if oPlayer.x >= x
 	{
-		sprite_index = sPlushStaggeredUp;	
-	}
-	else if Staggered
-	{
-		sprite_index = sPlushStaggeredSide;	
+		image_xscale = 1;	
 	}
 	else
 	{
-		sprite_index = sPlushNormal;
+		image_xscale = -1;
 	}
 }
-else
-{
-	sprite_index = sPlushDeath;
-}
 
-
-
+draw_text(x, y - 64, state);
+draw_text(x, y - 80, alarm[1]);

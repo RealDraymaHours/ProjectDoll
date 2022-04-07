@@ -1,6 +1,6 @@
 // Declare Temp Variables /////////////////////////////////////////////////////
 var kLeft, kRight, kUp, kDown, kJump, kJumpRelease, tempAccel, tempFric;
-var  kAttack, kDash, kRageArt,kAttackReleased;
+var  kAttack, kDash, kRageArt,kAttackReleased, kParry;
 ///////////////////////////////////////////////////////////////////////////////
 
 // Input //////////////////////////////////////////////////////////////////////
@@ -12,6 +12,7 @@ kDown        = keyboard_check(kMyDown);
 kJump        = keyboard_check_pressed(kMyJump);
 kJumpRelease = keyboard_check_released(kMyJump);
 kDash		 = keyboard_check(kMyDash);
+kParry		 = keyboard_check_released(kMyParry);
 
 kAttack = keyboard_check(kMyAttackLight);
 
@@ -20,7 +21,7 @@ kAttackReleased = keyboard_check_released(kMyAttackLight);
 kRageArt     = keyboard_check(kMyRageArt);
 
 
-if ((!IsAttacking) && (state != "DASH"))
+if ((!IsAttacking) && (state != "DASH") && (state != "PARRY"))
 {
 ///////////////////////////////////////////////////////////////////////////////
 // Which form of accel/fric to apply
@@ -125,10 +126,9 @@ if (kJump && cLeft && !onGround) {
 
 if (kJump && cRight && !onGround) {
     // Stretch sprite
-	/*
     xscale = 0.66;
-    yscale = 1.33;              
-      */ 
+    yscale = 1.33;    
+	
        ComboReset();
     // Wall jump is different when pushing off/towards the wall  
     if (kRight) {
@@ -163,28 +163,6 @@ if (kJump && onGround) {
 }
 
 
-
-
-
-//Dashing
-/*
-if ((!instance_exists(obj_bunny_bullet)) && (state != DEATH)) 
-{		
-	if CanWarp 
-	{
-		if kWarp
-		{
-			instance_create_depth(x,y-2,self.depth,obj_bunny_bullet);
-			instance_destroy();
-		}
-	}
-	else if (onGround)
-	{
-			if alarm[4] == -1{alarm[4] = 20;}
-	}
-}
-*/
-
 // Swap facing on walls
 if (!onGround) {
 	
@@ -194,34 +172,27 @@ if (!onGround) {
         facing = LEFT;
 }
 
-/* 
+
 
 // Adjust scaling after squash + stretch
 
 xscale = Approach(xscale, 1, 0.05);
 yscale = Approach(yscale, 1, 0.05);
-*/
-/*  */
 
 
-/*
-//parry
-if Parry = true
+//Parry
+if ((kParry) && (!Staggered))
 {
-	state = ACTIVE;
-	MyLight = c_blue;
-	speed = 0;
-	h = 0;
-	v = 0;
+	state = "PARRY";
+	Parry = true;
+	image_index = 0;
 }
-*/
-
-//Attacking and Rage arts
 
 
-if !ComboEnd()
+//Attacking
+if ((!ComboEnd()) && (!Staggered))
 {
-	if ((kLeft) || (kRight))
+	if (kDown)
 	{
 		if(kAttack)
 		{
@@ -244,7 +215,7 @@ if !ComboEnd()
 			ComboCounter++;
 		}
 	}
-	else if (kDown)
+	else if ((kLeft) || (kRight)) 
 	{
 		if(kAttack)
 		{
@@ -344,38 +315,45 @@ else if (state == "DASH")
 	{
 		DashX = mouse_x;
 		DashY = mouse_y;
+		Duration = 7;
 
 				if(kUp)
 					{
 						DashX = x;
 						DashY = y - 200;
+						
 					}
 				else if (kDown)
 					{
 						DashX = x;
 						DashY = y + 200;
+						Duration = 600;
 					}
 				else if (kLeft)
 					{
 						DashX = x - 200;
 						DashY = y;
+						Duration = 10;
 					}
 				else if (kRight)
 					{
 						DashX = x + 200;
 						DashY = y;
+						Duration = 10;
 					}
 				else
 					{
 						if facing == RIGHT
 						{
 							DashX = x + 200;
-							DashY = y;						
+							DashY = y;
+							Duration = 10;
 						}
 						else
 						{
 							DashX = x - 200;
-							DashY = y;						
+							DashY = y;
+							Duration = 10;
 						}
 					}
 
@@ -384,7 +362,7 @@ else if (state == "DASH")
 		v = 0;
 		isDashing = true;
 		move_towards_point(DashX,DashY,16);
-		alarm[3] = 7;
+		alarm[3] = Duration;
 	}
 }
 else
@@ -394,11 +372,9 @@ else
 }
 
 //Tacking damage
-if global.Staggered = true && Staggered = false
+if Staggered
 {
-	MyLight = c_black;
-	Staggered = true;
-	alarm[1] = 40;
+	if alarm[1] == -1{alarm[1] = 120;}
 }
 
 //dying

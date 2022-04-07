@@ -132,7 +132,7 @@
     "eventStubScript": null,
     "parent": {"name":"sPlayerSpiderBaseCombo425","path":"sprites/sPlayerSpiderBaseCombo425/sPlayerSpiderBaseCombo425.yy",},
     "resourceVersion": "1.4",
-    "name": "sPlayerSpiderBaseCombo4",
+    "name": "sPlayerSpiderBaseCombo425",
     "tags": [],
     "resourceType": "GMSequence",
   },

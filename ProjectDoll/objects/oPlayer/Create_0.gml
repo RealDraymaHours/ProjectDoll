@@ -11,7 +11,7 @@ sJumpD = sPlayerSpiderJumpD;
 sJumpM = sPlayerSpiderJumpM;
 sJumpU = sPlayerSpiderJumpU;
 sSlide = sPlayerSpiderSlide;
-//sParry = sPlayerParry;
+sParry = sPlayerSpiderParry;
 
 
 //Abilities
@@ -125,7 +125,9 @@ kMyRight       = vk_right;
 kMyUp          = vk_up;
 kMyDown        = vk_down;
 kMyJump        = vk_space;
-kMyDash		 =   vk_lshift;
+kMyDash		   = vk_lshift;
+
+kMyParry		= ord("A");
 
 kMyAttackLight = ord("S");
 kMyAttackHeavy = ord("D");

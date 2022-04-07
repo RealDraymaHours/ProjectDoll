@@ -20,3 +20,8 @@ if IsAttacking
 		alarm[2] = 30;
 	}
 }
+
+if state == "PARRY"
+{
+	state = "IDLE";	
+}
