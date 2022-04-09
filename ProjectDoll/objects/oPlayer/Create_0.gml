@@ -5,18 +5,13 @@ h = 0;
 v = 0;
 
 //sprite
-sIdle = sPlayerSpiderIdle;
-sRun = sPlayerSpiderRun;
-sJumpD = sPlayerSpiderJumpD;
-sJumpM = sPlayerSpiderJumpM;
-sJumpU = sPlayerSpiderJumpU;
-sSlide = sPlayerSpiderSlide;
-sParry = sPlayerSpiderParry;
+sParry = sPlayerTearParry;
 
 
 //Abilities
 Parry = false;
 
+Weapon = "Blue";
 
 
 

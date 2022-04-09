@@ -1,7 +1,12 @@
 /// @description Contact damage
-if ((!global.Staggered) && (Active))
+if ((!oPlayer.Staggered) && (oPlayer.state != "DASH") && (Active))
 {
-	DamagePlayer(other.x,other.y);
+	DamagePlayer(1);
+	
+	if ActiveKnockbackDir != "N"
+	{
+		KnockBackPlayer(ActiveKnockbackDir, ActiveKnockbackAcc, ActiveKnockbackFric);	
+	}
 }
 
 

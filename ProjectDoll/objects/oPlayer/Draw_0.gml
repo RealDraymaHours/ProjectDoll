@@ -1,25 +1,24 @@
 
-sIdle = sPlayerSpiderIdle;
-sRun = sPlayerSpiderRun;
-sJumpD = sPlayerSpiderJumpD;
-sJumpM = sPlayerSpiderJumpM;
-sJumpU = sPlayerSpiderJumpU;
-sSlide = sPlayerSpiderSlide;
-sDash = sPlayerSpiderDash;
+sIdle = sPlayerTearIdle;
+sRun = sPlayerTearRun;
+sJumpD = sPlayerTearJumpD;
+sJumpM = sPlayerTearJumpM;
+sJumpU = sPlayerTearJumpU;
+sSlide = sPlayerTearSlide;
+sDash = sPlayerTearDash;
 
-sBase1 = sPlayerSpiderBaseCombo1;
-sBase2 = sPlayerSpiderBaseCombo2;
-sBase3 = sPlayerSpiderBaseCombo3;
+sBase1 = sPlayerTearBaseCombo1;
+sBase2 = sPlayerTearBaseCombo2;
+sBase3 = sPlayerTearBaseCombo3;
 
-sGroundUp = sPlayerSpiderHeavyCombo1;
-sAirUp = sPlayerSpiderRACombo2;
-sHeavy2 = sPlayerSpiderHeavyCombo2;
+sGroundUp = sPlayerTearGroundUp;
+sAirUp = sPlayerTearAirUp;
 
-sAirDown = sPlayerSpiderAirDown;
-sGroundDown = sPlayerSpiderGroundDown;
+sAirDown = sPlayerTearAirDown;
+sGroundDown = sPlayerTearGroundDown;
 
-sGroundDir = sPlayerSpiderRACombo1;
-sAirDir = sPlayerSpiderHeavyCombo2;
+sGroundDir = sPlayerTearGroundDir;
+sAirDir = sPlayerTearAirDir;
 
 
 //sParry = sPlayerParry;
@@ -122,7 +121,8 @@ if !Staggered
 {	
 	if state == "DASH"
 	{
-		draw_sprite_ext(sprite_index, image_index, x, y, 1, 1, dir, c_white, image_alpha);
+		
+		draw_sprite_ext(sprite_index, image_index, x, y, 1, facing, dir, c_white, image_alpha);
 	}
 	else
 	{

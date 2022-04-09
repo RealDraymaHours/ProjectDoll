@@ -7,5 +7,11 @@ if other.Parry
 }
 else if ((!other.Staggered) && (other.state != "DASH"))
 {
-	DamagePlayer(Damage);	
+	DamagePlayer(Damage);
+	
+	if KnockbackDir != "N"
+	{
+		KnockBackPlayer(KnockbackDir, KnockbackAcc, KnockbackFric);	
+	}
+	
 }

@@ -3,7 +3,7 @@ Health = 100;
 Active = false;
 state = "IDLE";
 Stunned = false;
-
+AnimationLock = true;
 
 Staggered = false;
 StaggerTime = 10;
@@ -17,6 +17,10 @@ Knockback = false;
 KnockbackAcc = 0;
 KnockbackFric = 0;
 KnockbackDir = "H";
+
+ActiveKnockbackAcc = 0;
+ActiveKnockbackFric = 0;
+ActiveKnockbackDir = "N";
 
 //physics
 // Movement speed

@@ -2,6 +2,7 @@
 image_xscale = xSize;
 image_yscale = ySize;
 image_xscale = Xscale;
+image_yscale = Yscale;
 
 if StatsSet = true
 {

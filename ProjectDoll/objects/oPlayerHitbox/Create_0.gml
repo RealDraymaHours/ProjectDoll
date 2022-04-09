@@ -10,7 +10,7 @@ Stagger = 0;
 Break = 0;
 StatsSet = false;
 
-MySprite = sPlayerBaseIdle;
+MySprite = sPlayerTearIdle;
 IA = 0;
 XS = 0;
 YS = -1;

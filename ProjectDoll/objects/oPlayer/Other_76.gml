@@ -1,4 +1,4 @@
-//Parryif (event_data[? "message"] == "Player_Parry_Off")
+if (event_data[? "message"] == "Player_Parry_Off")
 {
 	Parry = false;
 }
@@ -61,8 +61,8 @@ if (event_data[? "message"] == "Player_Forward_Massive")
 
 if (event_data[? "message"] == "Player_Launch")
 {
-	    v = Approach(v,  -100, airFric);   
-		v = Approach(v, 100.0, airAccel);
+	    v = Approach(v,  -70, airFric);   
+		v = Approach(v, 70.0, airAccel);
 		
 
 		
@@ -89,15 +89,15 @@ if (event_data[? "message"] == "PlayerStinger")
 	{
 		repeat(20)
 		{
-			h = Approach(h, 240, groundFric);   
-			h = Approach(h, 200, groundAccel);
+			h = Approach(h, 180, groundFric);   
+			h = Approach(h, 20, groundAccel);
 		}
 	}
 	else
 	{
 		repeat(20)
 		{
-		    h = Approach(h, -240, groundFric);   
+		    h = Approach(h, -180, groundFric);   
 			h = Approach(h, 20, groundAccel);
 		}
 	}
@@ -108,116 +108,57 @@ if (event_data[? "message"] == "PlayerStinger")
 ///////////////////////////////////////////////////////////////////////////////////
 
 ///Hitboxes  
-//Spider Base
-if (event_data[? "message"] == "sPlayerSpiderBaseCombo1HitBox_Create")
+//Ground
+if (event_data[? "message"] == "GroundUp_Create_Hitbox")
 {
-	if onGround
-	{
-		if facing = RIGHT
-		{
-			setPlayerHitbox(x,y,10,10,5,"H",0.01,5,10,sPlayerSpiderBaseComboHitBox1);
-		}
-		else
-		{
-			setPlayerHitbox(x,y,10,10,5,"H",0.01,-5,10,sPlayerSpiderBaseComboHitBox1);
-		}
-	}
-	else
-	{
-		setPlayerHitbox(x,y,10,10,5,"H",0,0,1000,sPlayerSpiderBaseComboHitBox1);
-	}
-	
+	SpriteCallToHitbox("GroundUp", Weapon);	
 }
 
-if (event_data[? "message"] == "sPlayerSpiderBaseCombo2HitBox_Create")
+if (event_data[? "message"] == "GroundDir_Create_Hitbox")
 {
-	if onGround
-	{
-		if facing = RIGHT
-		{
-			setPlayerHitbox(x,y,10,10,5,"H",0.01,5,10,sPlayerSpiderBaseComboHitBox2);
-		}
-		else
-		{
-			setPlayerHitbox(x,y,10,10,5,"H",0.01,-5,10,sPlayerSpiderBaseComboHitBox2);
-		}
-	}
-	else
-	{
-		setPlayerHitbox(x,y,10,10,5,"H",0,0,1000,sPlayerSpiderBaseComboHitBox2);
-	}
-	
+	SpriteCallToHitbox("GroundDir", Weapon);	
 }
 
-
-if (event_data[? "message"] == "sPlayerSpiderBaseCombo3HitBox_Create")
+if (event_data[? "message"] == "GroundDown_Create_Hitbox")
 {
-	if onGround
-	{
-		if facing = RIGHT
-		{
-
-			setPlayerHitbox(x,y,20,20,20,"H",20,500,10,sPlayerSpiderBaseComboHitBox3);
-		}
-		else
-		{
-			setPlayerHitbox(x,y,20,20,20,"H",-20,500,10,sPlayerSpiderBaseComboHitBox3);
-		}
-	}
-	else
-	{
-		setPlayerHitbox(x,y,20,20,20,"H",0,0,1000,sPlayerSpiderBaseComboHitBox3);
-	}
-	
+	SpriteCallToHitbox("GroundDown", Weapon);	
 }
 
-//Spider heavy
-
-if (event_data[? "message"] == "sPlayerSpiderHeavyCombo1HitBox_Create")
+//Air
+if (event_data[? "message"] == "AirUp_Create_Hitbox")
 {
-	setPlayerHitbox(x,y,20, 20,20,"V",-15,100,10,sPlayerSpiderHeavyComboHitBox1);
+	SpriteCallToHitbox("AirUp", Weapon);	
 }
 
-
-
-if (event_data[? "message"] == "sPlayerSpiderHeavyCombo2HitBox_Create")
+if (event_data[? "message"] == "AirDir_Create_Hitbox")
 {
-
-		if facing = RIGHT
-		{
-			setPlayerHitbox(x,y,20,20,30,"H",20,500,10,sPlayerSpiderHeavyComboHitBox2);
-		}
-		else
-		{
-			setPlayerHitbox(x,y,20,20,30,"H",-20,500,10,sPlayerSpiderHeavyComboHitBox2);
-		}
+	SpriteCallToHitbox("AirDir", Weapon);	
 }
 
-
-//spider RageArt
-
-if (event_data[? "message"] == "sPlayerSpiderRACombo1HitBox_Create")
+if (event_data[? "message"] == "AirDown_Create_Hitbox")
 {
-	setPlayerHitbox(x,y,3, 1,1,"V",-15,100,10,sPlayerSpiderRAComboHitBox1);
+	SpriteCallToHitbox("AirDown", Weapon);	
 }
 
-if (event_data[? "message"] == "sPlayerSpiderRACombo2HitBox_Create")
+//Base
+if (event_data[? "message"] == "BaseCombo1_Create_Hitbox")
 {
-
-	setPlayerHitbox(x,y,20,20,20,"H",0,0,1000,sPlayerSpiderRAComboHitBox2);
+	SpriteCallToHitbox("BaseCombo1", Weapon);	
 }
 
-if (event_data[? "message"] == "sPlayerSpiderHeavyAirDownHitBox_Create")
+if (event_data[? "message"] == "BaseCombo2_Create_Hitbox")
 {
-
-	setPlayerHitbox(x,y,20,20,5,"V",15,100,10,sPlayerSpiderRAComboHitBox2);
+	SpriteCallToHitbox("BaseCombo2", Weapon);	
 }
 
-
-
-if (event_data[? "message"] == "sPlayerSpiderGroundDownHitBox_Create")
+if (event_data[? "message"] == "BaseCombo3_Create_Hitbox")
 {
-
-	setPlayerHitbox(x,y,20,20,5,"V",-15,100,10,sPlayerSpiderGroundDownHitBox);
+	SpriteCallToHitbox("BaseCombo3", Weapon);	
 }
+
+//RageArts
+
+
+
+
 
