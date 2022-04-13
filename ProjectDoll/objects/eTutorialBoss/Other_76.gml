@@ -11,7 +11,7 @@ if (event_data[? "message"] == "Blouter_Gaiser_Release")
 {
 	repeat(10)
 	{
-		Shroom = instance_create(x,y,eTutorialBall);	
+		Shroom = instance_create(x-15,y-25,eTutorialBall);	
 		Shroom.xspd = random_range(-3,3);
 		Shroom.yspd = random_range(-5,-10);
 	}

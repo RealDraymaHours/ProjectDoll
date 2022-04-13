@@ -50,7 +50,7 @@ switch(state)
 		}
 	break;
 	case("GAISER"):
-	repeat(10)
+		state = "IDLE";
 
 	break;
 }

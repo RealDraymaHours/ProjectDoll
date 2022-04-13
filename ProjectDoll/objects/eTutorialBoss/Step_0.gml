@@ -3,7 +3,7 @@
 switch(state)
 {
 	case("IDLE"):
-		if alarm[1] == -1{alarm[1] = 240; sprite_index = sBlouterIdle;}
+		if alarm[1] == -1{alarm[1] = 60; sprite_index = sBlouterIdle;}
 	break;
 	case("SLAM"):
 		sprite_index = sBlouterSlam;
@@ -21,7 +21,7 @@ switch(state)
 				case("JUMP"):
 					if ((sprite_index != sBlouterJumpStart)&&(sprite_index != sBlouterJumpMid)){PlayerX = oPlayer.x}
 					if sprite_index != sBlouterJumpMid{sprite_index = sBlouterJumpStart;}
-					move_towards_point(PlayerX, StartY -150,12);
+					move_towards_point(PlayerX, StartY -150,4);
 					if(position_meeting(PlayerX, StartY - 150, self)){SubState = "BEFOREDOWN"; image_index = 0;}
 				break;
 				case("BEFOREDOWN"):
