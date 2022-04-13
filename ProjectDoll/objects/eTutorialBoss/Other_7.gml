@@ -49,5 +49,9 @@ switch(state)
 			state = "IDLE";
 		}
 	break;
+	case("GAISER"):
+	repeat(10)
+
+	break;
 }
 //testingshit

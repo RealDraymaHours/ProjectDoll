@@ -50,6 +50,9 @@ switch(state)
 				break;
 			}	
 	break;
+	case("GAISER"):
+		sprite_index = sBlouterGaiser;
+	break;
 
 }
 

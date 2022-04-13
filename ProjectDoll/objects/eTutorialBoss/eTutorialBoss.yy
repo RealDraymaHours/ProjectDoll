@@ -34,8 +34,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Objects/Enemies.yy",
+    "name": "Bosses",
+    "path": "folders/Objects/Enemies/Bosses.yy",
   },
   "resourceVersion": "1.0",
   "name": "eTutorialBoss",
