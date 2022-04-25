@@ -1,1 +1,2 @@
-instance_create(200,200, eDummy);
+global.Health = global.MaxHealth;
+

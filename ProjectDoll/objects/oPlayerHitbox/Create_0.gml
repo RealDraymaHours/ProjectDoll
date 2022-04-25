@@ -1,10 +1,11 @@
 /// @description stats
 Damage = 0;
 Active = false;
-KnockbackAcc = 0;
-KnockbackFric = 0;
-KnockbackDir = "H";
-KnockbackTime = 10;
+
+KnockbackDirection = 0;
+KnockbackLenght = 0;
+KnockbackStrenght = 0;
+
 WrathGain = 0;
 Stagger = 0;
 Break = 0;

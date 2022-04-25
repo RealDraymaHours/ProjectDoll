@@ -1,0 +1,1 @@
+EnemyBeginStepGravity(self);

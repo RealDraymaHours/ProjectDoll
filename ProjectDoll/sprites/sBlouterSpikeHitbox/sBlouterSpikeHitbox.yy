@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "HitBoxes",
-    "path": "folders/Sprites/Bosses/Tutorial/Phase1/HitBoxes.yy",
+    "path": "folders/Sprites/Bosses/Blouter/Phase1/HitBoxes.yy",
   },
   "resourceVersion": "1.0",
   "name": "sBlouterSpikeHitbox",

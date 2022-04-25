@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "sPlayerTearSlide",
+    "path": "sprites/sPlayerTearSlide/sPlayerTearSlide.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": {

@@ -8,7 +8,7 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 13,
-  "bbox_right": 195,
+  "bbox_right": 99,
   "bbox_top": 15,
   "bbox_bottom": 127,
   "HTile": false,
@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "HitBoxes",
-    "path": "folders/Sprites/Bosses/Tutorial/Phase1/HitBoxes.yy",
+    "path": "folders/Sprites/Bosses/Blouter/Phase1/HitBoxes.yy",
   },
   "resourceVersion": "1.0",
   "name": "sBlouterSlamHitbox",

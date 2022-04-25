@@ -1,5 +1,6 @@
 ///@desc RandomMove
 rnd = irandom(1);
+image_index = 0;
 
 if distance_to_object(oPlayer) > 30
 {

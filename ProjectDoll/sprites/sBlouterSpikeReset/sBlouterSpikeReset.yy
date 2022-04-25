@@ -94,7 +94,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Phase1",
-    "path": "folders/Sprites/Bosses/Tutorial/Phase1.yy",
+    "path": "folders/Sprites/Bosses/Blouter/Phase1.yy",
   },
   "resourceVersion": "1.0",
   "name": "sBlouterSpikeReset",

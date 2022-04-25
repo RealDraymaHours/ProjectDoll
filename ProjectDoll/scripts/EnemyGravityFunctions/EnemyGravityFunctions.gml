@@ -92,20 +92,3 @@ for (i = 0; i < abs(Enemy.h); ++i) {
     }
 }	
 }
-
-function EnemyKnockback(acc, fric, target, VorH)
-{
-	if VorH == "H"
-	{
-		//right
-		target.h = Approach(target.h, fric, target.groundFric);   
-		target.h = Approach(target.h, acc, target.groundAccel);
-		target.v = 0;   
-		target.v = 0;
-	}
-	else
-	{
-		target.v = Approach(target.v, fric, target.airFric);   
-		target.v = Approach(target.v, acc, target.airAccel);
-	}
-}

@@ -6,10 +6,11 @@ sJumpM = sPlayerTearJumpM;
 sJumpU = sPlayerTearJumpU;
 sSlide = sPlayerTearSlide;
 sDash = sPlayerTearDash;
+sStaggered = sPlayerTearStaggered;
 
-sBase1 = sPlayerTearBaseCombo1;
-sBase2 = sPlayerTearBaseCombo2;
-sBase3 = sPlayerTearBaseCombo3;
+sBase1 = sPlayerBlueBaseCombo1;
+sBase2 = sPlayerBlueBaseCombo2;
+sBase3 = sPlayerBlueBaseCombo3;
 
 sGroundUp = sPlayerTearGroundUp;
 sAirUp = sPlayerTearAirUp;
@@ -20,11 +21,11 @@ sGroundDown = sPlayerTearGroundDown;
 sGroundDir = sPlayerTearGroundDir;
 sAirDir = sPlayerTearAirDir;
 
-
+draw_text_color(x-100,y-100,state,c_white,c_white,c_white,c_white,1);
 //sParry = sPlayerParry;
 //sDeath = sPlayerDeath;
 
-draw_text(x, y - 64, state);
+//draw_text(x, y - 64, state);
 
 switch (state) {
     case "IDLE": 
@@ -135,9 +136,9 @@ if !Staggered
 else
 {
 	if (onGround)
-	draw_sprite_ext(sprite_index, image_index, x, y + (16 - 16 * yscale) * 0.25, facing * xscale, yscale, 0, c_purple, image_alpha);    
+	draw_sprite_ext(sStaggered, image_index, x, y + (16 - 16 * yscale) * 0.25, facing * xscale, yscale, 0, c_purple, image_alpha);    
 	else
-	draw_sprite_ext(sprite_index, image_index, x, y, facing * xscale, yscale, 0, c_purple, image_alpha);
+	draw_sprite_ext(sStaggered, image_index, x, y, facing * xscale, yscale, 0, c_purple, image_alpha);
 }
 
 

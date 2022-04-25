@@ -5,22 +5,29 @@ state = "IDLE";
 Stunned = false;
 AnimationLock = true;
 
+CanParry = false;
+StunnedAmount = 0;
+
 Staggered = false;
 StaggerTime = 10;
 Poise = 0;
 
-FinisherMeter = 100;
-FinisherMeterRegenAmount = 0;
+
+MaxFinishMeter = 100;
+FinisherMeter = 0;
 FinisherMeterRegenTime = 100;
 
 Knockback = false;
-KnockbackAcc = 0;
-KnockbackFric = 0;
-KnockbackDir = "H";
+KnockbackDirection = 0;
+KnockbackLenght = 0;
+KnockbackStrenght = 0;
 
 ActiveKnockbackAcc = 0;
 ActiveKnockbackFric = 0;
 ActiveKnockbackDir = "N";
+
+Color = c_white;
+flashAlpha = 0;
 
 //physics
 // Movement speed

@@ -12,7 +12,7 @@ kDown        = keyboard_check(kMyDown);
 kJump        = keyboard_check_pressed(kMyJump);
 kJumpRelease = keyboard_check_released(kMyJump);
 kDash		 = keyboard_check(kMyDash);
-kParry		 = keyboard_check_released(kMyParry);
+kParry		 = keyboard_check_pressed(kMyParry);
 
 kAttack = keyboard_check(kMyAttackLight);
 
@@ -185,6 +185,7 @@ if ((kParry) && (!Staggered))
 {
 	state = "PARRY";
 	Parry = true;
+	Parried = false;
 	image_index = 0;
 }
 
@@ -369,12 +370,82 @@ else
 {
 	h = 0;
 	v = 0;
+	if ((state == "PARRY") && (Parried)){state = "IDLE";}
+}
+
+
+if(kDash) 
+{
+	if CanDash
+	{
+		state = "DASH";
+		if(kUp)
+		{
+			dir = point_direction(x,y,x,y - 20);	
+			
+			repeat(10)
+			{
+				with (instance_create(x + random_range(-8, 8), bbox_bottom, oParticle))
+	            direction = 90 + random_range(-45, 45); 
+			}
+		}
+		else if (kDown)
+		{
+			dir = point_direction(x,y,x,y + 20);
+	
+			repeat(10)
+			{
+				with (instance_create(x + random_range(-8, 8), bbox_bottom, oParticle))
+	            direction = 90 + random_range(-45, 45); 
+			}
+		}
+		else if (kLeft)
+		{
+			dir = point_direction(x,y,x - 20,y);	
+			repeat(10)
+			{
+				with (instance_create(x + random_range(-8, 8), bbox_bottom, oParticle))
+	            direction = 180 + random_range(-45, 45); 
+			}
+		}
+		else if (kRight)
+		{
+			dir = point_direction(x,y,x + 20,y);	
+			repeat(10)
+			{
+				with (instance_create(x + random_range(-8, 8), bbox_bottom, oParticle))
+	            direction = 0 + random_range(-45, 45); 
+			}
+		}
+		else
+		{
+			if facing == RIGHT
+			{
+				dir = point_direction(x,y,x + 20,y);
+				repeat(10)
+				{
+					with (instance_create(x + random_range(-8, 8), bbox_bottom, oParticle))
+				    direction = 0 + random_range(-45, 45); 
+				}
+			}
+			else
+			{
+				dir = point_direction(x,y,x - 20,y);
+				repeat(10)
+				{
+					with (instance_create(x + random_range(-8, 8), bbox_bottom, oParticle))
+				    direction = 180 + random_range(-45, 45); 
+				}
+			}
+		}
+		
+	}
 }
 
 //Tacking damage
 if Staggered
 {
-	if alarm[1] == -1{alarm[1] = 120;}
+	if alarm[1] == -1{alarm[1] = 20;}
 }
 
 //dying
@@ -388,7 +459,11 @@ if global.Health < 1
 }
 
 
-
+if ((state != "PARRY") && (sprite_index == sParry))
+{
+	state = "IDLE";
+	sprite_index = sIdle;
+}
 
 //Audio
 audio_listener_position(x,y,0);

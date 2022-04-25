@@ -79,7 +79,9 @@ else
 
 if Knockback
 {
-	EnemyKnockback(self.KnockbackAcc,self.KnockbackFric,self, self.KnockbackDir);
+	move_contact_solid(KnockbackDirection, KnockbackStrenght);
+	KnockbackStrenght = lerp(KnockbackStrenght,0,0.1);
+
 }
 
 

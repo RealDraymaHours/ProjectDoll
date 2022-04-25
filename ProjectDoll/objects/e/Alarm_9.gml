@@ -1,11 +1,11 @@
 /// @description FinisherMeterRegem
-if FinisherMeter >= 100
+if FinisherMeter = 0
 {
-	FinisherMeter = 100	
+	FinisherMeter = 0	
 }
 else
 {
-	FinisherMeter += FinisherMeterRegenAmount;
+	FinisherMeter -= 1;
 }
 
 alarm[9] = FinisherMeterRegenTime;

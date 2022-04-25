@@ -1,5 +1,5 @@
 /// @description base stats
-Health = 100;
+Health = 100000;
 Active = false;
 Knockback = false;
 Stunned = false;

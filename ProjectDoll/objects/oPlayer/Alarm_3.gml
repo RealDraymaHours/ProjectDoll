@@ -3,6 +3,8 @@
 state = "IDLE";
 isDashing = false;
 
+ComboReset();
+
 hspeed = 0;
 vspeed = 0;
 

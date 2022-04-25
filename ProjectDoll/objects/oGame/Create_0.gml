@@ -17,6 +17,10 @@ global.Staggered = false;
 global.Mana = 0;
 global.MaxMana = 100;
 
+
+global.Parry = false;
+global.state = "IDLE";
+
 //UI
 /*
 global.LeftIcon = spr_inv_sword;
