@@ -61,6 +61,11 @@ IsAttacking = false;
 RageArtsArray = [-1,-1,-1,-1,-1,-1,-1,-1,-1];
 RageArtActivated = false;
 
+CutX = 0;
+CutY = 0;
+CutSpeed = 8;
+DistanceToBoss = 0;
+
 //Dashing Values
 DashX = 0;
 DashY = 0;

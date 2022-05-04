@@ -3,6 +3,11 @@ if (event_data[? "message"] == "Player_Parry_Off")
 	Parry = false;
 }
 
+if (event_data[? "message"] == "Create_Player_Grab")
+{
+	setPlayerGrabHitbox();
+}
+
 /// Momentum
 if (event_data[? "message"] == "Player_Step")
 {

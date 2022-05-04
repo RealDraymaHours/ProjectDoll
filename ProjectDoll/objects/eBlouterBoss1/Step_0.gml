@@ -36,7 +36,7 @@ switch(state)
 		dir = sign(oPlayer.x - x);
 		h = (dir * 2);
 		v = (min(7,v+0.05));
-		if distance_to_object(oPlayer) < 20{image_index = 1; state = "SLAM";}
+		if distance_to_object(oPlayer) < 5{image_index = 1; state = "SLAM";}
 	break;
 	case("JUMP"):		
 			switch(SubState)

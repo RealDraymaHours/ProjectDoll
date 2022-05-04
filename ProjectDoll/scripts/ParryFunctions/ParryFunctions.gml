@@ -38,6 +38,8 @@ function ParryMelee(otherX,otherY,Caster,selfID)
 	}
 	
 	Caster.FinisherMeter += selfID.StunnedAmount;
+	Caster.Parried = true;
+	Caster.flashAlpha = 1;
 	audio_play_sound(PlayerParryWIP,1,false);
 
 	global.state = "IDLE";
@@ -48,6 +50,26 @@ function ParryMelee(otherX,otherY,Caster,selfID)
 
 	//oPlayer.alarm[3] = 1;
 	instance_destroy(selfID);
+}
+
+function ParryEffect(otherX, otherY)
+{
+	audio_play_sound(PlayerParryWIP,1,false);
+	
+	repeat(10)
+	{
+		instance_create(otherX, otherY, oParryEffect);	
+		instance_create(otherX, otherY, oHealEffect);	
+		instance_create(otherX, otherY, oRageEffect);	
+	}
+	
+	global.state = "IDLE";
+	global.Parry = false;
+	oPlayer.IsAttacking = false;
+	oPlayer.Staggered = false;
+	oPlayer.sprite_index = oPlayer.sIdle;
+
+	
 }
 
 function ParryActive(otherX,otherY,Caster,StunnedAmount)

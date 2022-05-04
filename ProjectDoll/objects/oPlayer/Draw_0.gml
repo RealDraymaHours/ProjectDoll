@@ -8,12 +8,12 @@ sSlide = sPlayerTearSlide;
 sDash = sPlayerTearDash;
 sStaggered = sPlayerTearStaggered;
 
-sBase1 = sPlayerBlueBaseCombo1;
-sBase2 = sPlayerBlueBaseCombo2;
-sBase3 = sPlayerBlueBaseCombo3;
+sBase1 = sPlayerCyanBaseCombo1;
+sBase2 = sPlayerCyanBaseCombo2;
+sBase3 = sPlayerCyanBaseCombo3;
 
-sGroundUp = sPlayerTearGroundUp;
-sAirUp = sPlayerTearAirUp;
+sGroundUp = sPlayerGrab;
+sAirUp = sPlayerGrab;
 
 sAirDown = sPlayerTearAirDown;
 sGroundDown = sPlayerTearGroundDown;
@@ -57,6 +57,9 @@ switch (state) {
     break;
 	case "PARRY":
 		sprite_index = sParry;
+	break;
+	case "PARRIED":
+		sprite_index = sStaggered;
 	break;
 	case "ATTACK":
 		if ComboCounter != -1
@@ -115,6 +118,11 @@ switch (state) {
 				break;
 			}
 		}
+	break;
+	case("GRAB"):
+		sprite_index = sPlayerGrab;
+		ComboForceEnd();
+	break;
 }
 // Draw player
 
@@ -140,6 +148,8 @@ else
 	else
 	draw_sprite_ext(sStaggered, image_index, x, y, facing * xscale, yscale, 0, c_purple, image_alpha);
 }
+
+DrawTheGlow(sprite_index);
 
 
 

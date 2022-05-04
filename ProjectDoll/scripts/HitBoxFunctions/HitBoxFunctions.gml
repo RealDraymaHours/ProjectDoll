@@ -20,6 +20,21 @@ function setPlayerHitbox(Damage,Stagger, WrathGain,KnockbackDirection, Knockback
 	tempHitBox.StatsSet = true; 
 }
 
+function setPlayerGrabHitbox()
+{
+	grabHit = instance_create(oPlayer.x,oPlayer.y,oPlayerGrabHitbox);
+	
+	if oPlayer.facing = oPlayer.RIGHT
+	{
+		grabHit.image_xscale = 1;
+	}
+	else
+	{
+		grabHit.image_xscale = -1;
+	}
+	
+}
+
 function setEnemyHitbox(Enemy, StunnedAmount, Damage,KnockBackDir, KnockbackAcc, KnockbackFric, HitBoxSprite)
 {
 	tempHitBox = instance_create(Enemy.x, Enemy.y, eHitbox);

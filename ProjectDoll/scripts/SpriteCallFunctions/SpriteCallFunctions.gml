@@ -34,16 +34,16 @@ Big = 20;
 			{
 				if oPlayer.facing = oPlayer.RIGHT
 				{
-					setPlayerHitbox(10,5,5,0,5,5,10,sPlayerTearBaseCombo1Hitbox);
+					setPlayerHitbox(10,5,5,0,5,5,10,sPlayerCyanBaseCombo1Hitbox);
 				}
 				else
 				{
-					setPlayerHitbox(10,5,5,180,5,5,10,sPlayerTearBaseCombo1Hitbox);
+					setPlayerHitbox(10,5,5,180,5,5,10,sPlayerCyanBaseCombo1Hitbox);
 				}
 			}
 			else
 			{
-				setPlayerHitbox(10,1,1,0,1,1,0,sPlayerTearBaseCombo1Hitbox);
+				setPlayerHitbox(10,1,1,0,1,1,0,sPlayerCyanBaseCombo1Hitbox);
 			}
 			
 		break;
@@ -53,16 +53,16 @@ Big = 20;
 			{
 				if oPlayer.facing = oPlayer.RIGHT
 				{
-					setPlayerHitbox(10,10,5,0,5,5,10,sPlayerTearBaseCombo2Hitbox);
+					setPlayerHitbox(10,10,5,0,5,5,10,sPlayerCyanBaseCombo2Hitbox);
 				}
 				else
 				{
-					setPlayerHitbox(10,10,5,180,5,5,10,sPlayerTearBaseCombo2Hitbox);
+					setPlayerHitbox(10,10,5,180,5,5,10,sPlayerCyanBaseCombo2Hitbox);
 				}
 			}
 			else
 			{
-				setPlayerHitbox(10,1,1,0,0,1,0,sPlayerTearBaseCombo2Hitbox);
+				setPlayerHitbox(10,1,1,0,0,1,0,sPlayerCyanBaseCombo2Hitbox);
 			}		
 		break;
 ///////////////////////////////////////////////////////////////////////////////////////////////////////			
@@ -72,16 +72,16 @@ Big = 20;
 				if oPlayer.facing = oPlayer.RIGHT
 				{
 
-					setPlayerHitbox(20,20,20,0,15,5,10,sPlayerTearBaseCombo3Hitbox);
+					setPlayerHitbox(20,20,20,0,15,5,10,sPlayerCyanBaseCombo3Hitbox);
 				}
 				else
 				{
-					setPlayerHitbox(20,20,20,180,15,5,10,sPlayerTearBaseCombo3Hitbox);
+					setPlayerHitbox(20,20,20,180,15,5,10,sPlayerCyanBaseCombo3Hitbox);
 				}
 			}
 			else
 			{
-				setPlayerHitbox(20,2,20,0,0,1,0,sPlayerTearBaseCombo3Hitbox);
+				setPlayerHitbox(20,2,20,0,0,1,0,sPlayerCyanBaseCombo3Hitbox);
 			}	
 		break;
 ///////////////////////////////////////////////////////////////////////////////////////////////////////			

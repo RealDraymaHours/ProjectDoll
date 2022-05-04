@@ -2,11 +2,13 @@
 if !Parried
 {
 	oTut.state = "IDLE";	
+	oTut.SubState = "IDLE";	
 	instance_destroy();	
 }
 else
 {
-	oTut.state = "STUNNED";
+	oTut.state = "CATCHSCYTHE";
+	oTut.SubState = "IDLE";	
 	oTut.alarm[8] = 40;
 	oTut.Knockback = true;
 	oTut.KnockbackStrenght = 1;

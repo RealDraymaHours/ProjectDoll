@@ -1,7 +1,5 @@
 screenShake = false;
 
-Multiplier = 0.8;
-
 state = "BASE";
 
 Intensity = 1;
@@ -11,6 +9,9 @@ Intensity = 1;
 
 view_width = 3456/5;
 view_height = 1800/5;
+
+Bview_width = 3456/5;
+Bview_height = 1800/5;
 
 window_scale = 3;
 

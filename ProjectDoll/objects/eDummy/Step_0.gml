@@ -81,7 +81,6 @@ if Knockback
 {
 	move_contact_solid(KnockbackDirection, KnockbackStrenght);
 	KnockbackStrenght = lerp(KnockbackStrenght,0,0.1);
-
 }
 
 

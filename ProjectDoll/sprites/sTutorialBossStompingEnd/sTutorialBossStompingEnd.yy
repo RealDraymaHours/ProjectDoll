@@ -89,8 +89,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Tutorial",
-    "path": "folders/Sprites/Bosses/Tutorial.yy",
+    "name": "Stomping",
+    "path": "folders/Sprites/Bosses/Tutorial/Stomping.yy",
   },
   "resourceVersion": "1.0",
   "name": "sTutorialBossStompingEnd",

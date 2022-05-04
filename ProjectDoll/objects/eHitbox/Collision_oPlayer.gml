@@ -6,10 +6,6 @@ if other.Parry
 	ParryMelee(other.x,other.y,Caster,self.id);
 	other.state = "IDLE";
 	other.Parry = false;
-	if KnockbackDir != "N"
-	{
-		KnockBackPlayer(KnockbackDir, KnockbackAcc, KnockbackFric);	
-	}
 
 }
 

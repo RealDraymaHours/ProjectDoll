@@ -193,8 +193,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Tutorial",
-    "path": "folders/Sprites/Bosses/Tutorial.yy",
+    "name": "Slashing",
+    "path": "folders/Sprites/Bosses/Tutorial/Slashing.yy",
   },
   "resourceVersion": "1.0",
   "name": "sTutorialBossSlash",

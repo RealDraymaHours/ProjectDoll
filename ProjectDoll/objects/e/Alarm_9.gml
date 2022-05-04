@@ -1,11 +1,26 @@
 /// @description FinisherMeterRegem
-if FinisherMeter = 0
+if Recovery
 {
-	FinisherMeter = 0	
+	if FinisherMeter = 0
+	{
+		FinisherMeter = 0	
+	}
+	else
+	{
+		FinisherMeter -= 20;
+	}
+
 }
 else
 {
-	FinisherMeter -= 1;
+	if FinisherMeter = 0
+	{
+		FinisherMeter = 0	
+	}
+	else
+	{
+		FinisherMeter -= 1;
+	}
 }
 
 alarm[9] = FinisherMeterRegenTime;

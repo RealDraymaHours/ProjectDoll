@@ -7,6 +7,8 @@ AnimationLock = true;
 
 CanParry = false;
 StunnedAmount = 0;
+Parried = false;
+Recovery = false;
 
 Staggered = false;
 StaggerTime = 10;
@@ -28,6 +30,7 @@ ActiveKnockbackDir = "N";
 
 Color = c_white;
 flashAlpha = 0;
+NoFlip = false;
 
 //physics
 // Movement speed

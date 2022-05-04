@@ -50,12 +50,16 @@
     "spriteId": {"name":"sTutorialBossStomping","path":"sprites/sTutorialBossStomping/sTutorialBossStomping.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 10.0,
+    "playbackSpeed": 15.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
     "length": 7.0,
-    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "events": {"Keyframes":[
+        {"id":"fe6171a1-cd55-4bf1-bf1f-bde3a74043b1","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Events":[
+                "Create_TutorialStomHitbox",
+              ],"resourceVersion":"1.0","resourceType":"MessageEventKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<MessageEventKeyframe>",},
+      ],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
@@ -93,8 +97,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Tutorial",
-    "path": "folders/Sprites/Bosses/Tutorial.yy",
+    "name": "Stomping",
+    "path": "folders/Sprites/Bosses/Tutorial/Stomping.yy",
   },
   "resourceVersion": "1.0",
   "name": "sTutorialBossStomping",

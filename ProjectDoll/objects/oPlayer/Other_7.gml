@@ -21,7 +21,7 @@ if IsAttacking
 	}
 }
 
-if state == "PARRY"
+if ((state == "PARRY") || (state == "PARRIED"))
 {
 	state = "IDLE";	
 }
