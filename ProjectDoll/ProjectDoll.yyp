@@ -49,6 +49,7 @@
     {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},"order":0,},
     {"id":{"name":"_view_setInternal","path":"scripts/_view_setInternal/_view_setInternal.yy",},"order":2,},
     {"id":{"name":"sPlayerTearGroundDown","path":"sprites/sPlayerTearGroundDown/sPlayerTearGroundDown.yy",},"order":1,},
+    {"id":{"name":"sTutorialBossWhip","path":"sprites/sTutorialBossWhip/sTutorialBossWhip.yy",},"order":0,},
     {"id":{"name":"oTut","path":"objects/oTut/oTut.yy",},"order":0,},
     {"id":{"name":"oPlayerGrabHitbox","path":"objects/oPlayerGrabHitbox/oPlayerGrabHitbox.yy",},"order":6,},
     {"id":{"name":"sPlayerMask","path":"sprites/sPlayerMask/sPlayerMask.yy",},"order":1,},
@@ -308,6 +309,7 @@
     {"folderPath":"folders/Sprites/Bosses/Tutorial/GlowOutlines.yy","order":17,"resourceVersion":"1.0","name":"GlowOutlines","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Player/TestSprites/Cyan/Glows.yy","order":6,"resourceVersion":"1.0","name":"Glows","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/Player/TestSprites/Cyan/Hitboxes.yy","order":7,"resourceVersion":"1.0","name":"Hitboxes","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Bosses/Tutorial/Whip.yy","order":19,"resourceVersion":"1.0","name":"Whip","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
