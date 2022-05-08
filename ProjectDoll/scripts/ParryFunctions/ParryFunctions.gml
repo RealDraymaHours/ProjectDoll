@@ -30,11 +30,17 @@ function ParryProjectileDestroy(OtherX,OtherY,selfID)
 
 function ParryMelee(otherX,otherY,Caster,selfID)
 {
-	repeat(10)
+	repeat(5)
 	{
 		instance_create(otherX, otherY, oParryEffect);	
-		instance_create(otherX, otherY, oHealEffect);	
-		instance_create(otherX, otherY, oRageEffect);	
+		healeff = instance_create(otherX, otherY, oHealEffect);	
+		rageeff = instance_create(otherX, otherY, oRageEffect);	
+		
+		healeff.image_blend = selfID.EffectColor;
+		rageeff.image_blend = selfID.EffectColor;
+		
+		healeff.EffectColor = selfID.EffectColor;
+		rageeff.EffectColor = selfID.EffectColor;
 	}
 	
 	Caster.FinisherMeter += selfID.StunnedAmount;
@@ -52,15 +58,20 @@ function ParryMelee(otherX,otherY,Caster,selfID)
 	instance_destroy(selfID);
 }
 
-function ParryEffect(otherX, otherY)
+function ParryEffect(otherX, otherY, Color)
 {
 	audio_play_sound(PlayerParryWIP,1,false);
 	
 	repeat(10)
 	{
 		instance_create(otherX, otherY, oParryEffect);	
-		instance_create(otherX, otherY, oHealEffect);	
-		instance_create(otherX, otherY, oRageEffect);	
+		healeff = instance_create(otherX, otherY, oHealEffect);	
+		rageeff = instance_create(otherX, otherY, oRageEffect);	
+		
+		healeff.image_blend = Color;
+		rageeff.image_blend = Color;
+		healeff.EffectColor = Color;
+		rageeff.EffectColor = Color;
 	}
 	
 	global.state = "IDLE";

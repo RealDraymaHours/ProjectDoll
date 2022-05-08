@@ -112,6 +112,10 @@ if state != "STUNNED"
 			case("CATCHSCYTHE"):
 				sprite_index = sTutorialBossParried;
 			break;
+			
+			case("WHIP"):
+				sprite_index = sTutorialBossWhip;
+			break;
 
 			case("PARRIED"):
 				switch(SubState)

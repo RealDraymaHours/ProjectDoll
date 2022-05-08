@@ -1,5 +1,7 @@
 /// @description base stats
 Health = 100;
+MaxHealth = 100;
+
 Active = false;
 state = "IDLE";
 Stunned = false;

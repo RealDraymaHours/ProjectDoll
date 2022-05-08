@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+
 
 // Inherit the parent event
 event_inherited();
@@ -19,19 +18,22 @@ if !NoFlip
 	}
 }
 
-
-	bar_width = 56;
-	bar_height = 4
-	
-	draw_sprite(sStaggerBarBackground,0, x, y-80);	
-	draw_sprite(sStaggerBar,0, x, y-80);	
-	
-	draw_sprite_stretched(sManaBar,0,x + 4, y - 76,(FinisherMeter/MaxFinishMeter) * bar_width, bar_height);
 	
 if state != "PARRIED"
 {
-	if SubState = "SLASH1"
+	switch(SubState)
 	{
-		draw_sprite_glow_ext(sTutorialBossSlash1Glow,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha,make_color_rgb(255,0,255));	
+		case("SLASH1"):
+			draw_sprite_glow_ext(sTutorialBossSlash1Glow,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha,make_color_rgb(255,0,255));	
+		break;
+		case("SLASH2"):
+			draw_sprite_glow_ext(sTutorialBossSlash2Glow,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha,make_color_rgb(255,0,255));	
+		break;
+		case("SLASH3"):
+			draw_sprite_glow_ext(sTutorialBossSlash3Glow,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha,make_color_rgb(255,0,255));	
+		break;
+		case("WHIP"):
+			draw_sprite_glow_ext(sTutorialBossWhipGlow,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha,make_color_rgb(255,0,255));	
+		break;
 	}
 }

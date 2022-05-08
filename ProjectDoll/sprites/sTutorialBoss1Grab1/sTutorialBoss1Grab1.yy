@@ -229,8 +229,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Grab",
-    "path": "folders/Sprites/Bosses/Tutorial/Grab.yy",
+    "name": "Grab1",
+    "path": "folders/Sprites/Bosses/Tutorial/Grab/Grab1.yy",
   },
   "resourceVersion": "1.0",
   "name": "sTutorialBoss1Grab1",

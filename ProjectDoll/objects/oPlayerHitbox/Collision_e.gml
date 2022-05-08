@@ -7,7 +7,7 @@ if !other.Staggered
 		instance_destroy();	
 	}
 	
-	EnemyDamageParticleCotton(other);
+	EnemyDamageParticle(other);
 	
 	if ((global.Mana <= global.MaxMana))
 	{

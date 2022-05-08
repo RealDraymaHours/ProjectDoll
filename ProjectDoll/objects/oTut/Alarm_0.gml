@@ -2,8 +2,11 @@
 state = "IDLE";
 SubState = "JUMP"
 PrevState = "IDLE";
+Name = "Nostro, the eternal jailer";
 
-Health = 150;
+Health = 1500;
+MaxHealt = 1500;
+
 Active = false;
 Knockback = false;
 Stunned = false;

@@ -1,4 +1,4 @@
-if(MoveToPlayer)
+if((MoveToPlayer) && (instance_exists(p)))
 {
 	NewSpeed += 0.1;
 	speed = random_range(5, 10);

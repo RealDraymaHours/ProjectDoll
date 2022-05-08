@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Player",
-    "path": "folders/Objects/Player.yy",
+    "name": "ForCutscenes",
+    "path": "folders/Objects/Player/ForCutscenes.yy",
   },
   "resourceVersion": "1.0",
   "name": "oCameraFollowsMe",

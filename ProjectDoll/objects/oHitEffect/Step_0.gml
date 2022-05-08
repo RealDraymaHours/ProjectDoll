@@ -1,4 +1,4 @@
-if(MoveToPlayer)
+if((MoveToPlayer) && (instance_exists(p)))
 {
 	NewSpeed += 0.1;
 	image_angle = direction;

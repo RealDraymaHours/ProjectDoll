@@ -35,7 +35,7 @@ function setPlayerGrabHitbox()
 	
 }
 
-function setEnemyHitbox(Enemy, StunnedAmount, Damage,KnockBackDir, KnockbackAcc, KnockbackFric, HitBoxSprite)
+function setEnemyHitbox(Enemy, StunnedAmount, Damage,KnockBackDir, KnockbackAcc, KnockbackFric, HitBoxSprite, EffectColor)
 {
 	tempHitBox = instance_create(Enemy.x, Enemy.y, eHitbox);
 	
@@ -45,8 +45,12 @@ function setEnemyHitbox(Enemy, StunnedAmount, Damage,KnockBackDir, KnockbackAcc,
 	tempHitBox.image_xscale = Enemy.image_xscale;
 	tempHitBox.image_yscale = Enemy.image_yscale;
 	tempHitBox.Caster = Enemy;
+	
 	tempHitBox.KnockbackAcc = KnockbackAcc;
 	tempHitBox.KnockbackFric = KnockbackFric;
 	tempHitBox.KnockbackDir = KnockBackDir;
+	
+	tempHitBox.EffectColor = EffectColor;
+	
 	tempHitBox.StatsSet = true;
 }

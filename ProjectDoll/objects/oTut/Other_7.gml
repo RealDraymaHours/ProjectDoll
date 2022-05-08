@@ -1,5 +1,13 @@
 /// @description 
-rnd = irandom(4);	
+if ((Health) < (MaxHealth/2))
+{
+	rnd = irandom(4);	
+}
+else
+{
+	rnd = irandom(5);
+}
+
 
 
 if visible = true
@@ -24,6 +32,9 @@ switch(state)
 			break;
 			case(4):
 				if PrevState == "STOMP"{state = "THROW";}else{state = "STOMP"; SubState = "STOMPSTART";}
+			break;
+			case(5):
+				state = "WHIP"; SubState = "WHIP"; NoFlip = true;
 			break;
 		}
 		PrevState = state;
@@ -116,5 +127,9 @@ switch(state)
 				NoFlip = false;
 			break;
 		}
+	break;
+	case("WHIP"):
+		state = "IDLE";
+		SubState = "IDLE";
 	break;
 }

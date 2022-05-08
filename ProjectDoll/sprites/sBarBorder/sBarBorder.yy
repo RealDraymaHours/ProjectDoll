@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "UI",
-    "path": "folders/Sprites/UI.yy",
+    "name": "Player",
+    "path": "folders/Sprites/UI/Player.yy",
   },
   "resourceVersion": "1.0",
   "name": "sBarBorder",

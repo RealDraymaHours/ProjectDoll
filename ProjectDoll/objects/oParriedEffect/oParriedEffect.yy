@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sRageEffect",
-    "path": "sprites/sRageEffect/sRageEffect.yy",
+    "name": "sNeutralEffect",
+    "path": "sprites/sNeutralEffect/sNeutralEffect.yy",
   },
   "solid": false,
   "visible": true,

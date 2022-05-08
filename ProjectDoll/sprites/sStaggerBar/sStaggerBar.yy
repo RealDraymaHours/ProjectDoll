@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Enemies",
-    "path": "folders/Sprites/Enemies.yy",
+    "path": "folders/Sprites/UI/Enemies.yy",
   },
   "resourceVersion": "1.0",
   "name": "sStaggerBar",

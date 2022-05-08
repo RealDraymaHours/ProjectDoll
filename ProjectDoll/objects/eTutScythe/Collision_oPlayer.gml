@@ -5,7 +5,7 @@ if ((other.Parry) && (!Parried) && (!GoBack))
 	myhb = myhb * 1.3;
 	GoBack = true;
 	
-	ParryEffect(other.x,other.y);
+	ParryEffect(other.x,other.y,make_color_rgb(255,0,255));
 }
 else if ((!other.Staggered) && (other.state != "DASH") && (!Parried))
 {
