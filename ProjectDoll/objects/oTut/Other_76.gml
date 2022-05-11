@@ -33,6 +33,24 @@ if (event_data[? "message"] == "Create_TutorialStomHitbox")
 }
 
 
+
+if (event_data[? "message"] == "Create_TutorialBoss_Whip1Hitbox")
+{
+	setEnemyHitbox(self,1, 1,"N",70,70,sTutorialBossWhip1Hitbox,make_color_rgb(255,0,255));
+}
+
+if (event_data[? "message"] == "Create_TutorialBoss_Whip2Hitbox")
+{
+	setEnemyHitbox(self,1, 1,"N",70,70,sTutorialBossWhip2Hitbox,make_color_rgb(255,0,255));
+}
+
+if (event_data[? "message"] == "Create_TutorialBoss_Whip3Hitbox")
+{
+	setEnemyHitbox(self,1, 1,"N",70,70,sTutorialBossWhip3Hitbox,make_color_rgb(255,0,255));
+}
+
+
+
 if (event_data[? "message"] == "Damage_Me_Small")
 {
 	if !visible{Health -= 20;}

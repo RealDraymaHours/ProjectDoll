@@ -153,6 +153,11 @@ if state != "STUNNED"
 						Parried = false;
 						image_index = 10;
 					break;
+					case("WHIP"):
+						state = PrevState;
+						SubState = "WHIP";
+						Parried = false;
+					break;
 				}
 			break;
 			case("GRABBED"):
