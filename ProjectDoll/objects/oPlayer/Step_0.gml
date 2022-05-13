@@ -24,7 +24,7 @@ kGrab = keyboard_check(ord("D"));
 kRageArt     = keyboard_check(kMyRageArt);
 
 
-	if ((!IsAttacking) && (state != "DASH") && (state != "PARRY") && (state != "PARRIED"))
+if ((!IsAttacking) && (state != "DASH") && (state != "PARRY") && (state != "PARRIED") && (state != "HOOK"))
 	{
 		///////////////////////////////////////////////////////////////////////////////
 		// Which form of accel/fric to apply
@@ -196,11 +196,35 @@ kRageArt     = keyboard_check(kMyRageArt);
 		//Attacking
 		if ((!ComboEnd()) && (!Staggered))
 		{
-			if(kGrab)
+			if((kGrab) && (!instance_exists(oHook)))
 			{
-				state = "GRAB"	
-				IsAttacking = true;
-				image_index = 0;
+				if (kDown)
+				{
+					state = "HOOK";
+					//IsAttacking = true;
+					Hook = instance_create(x,y,oHook);
+					Hook.vspeed = 20;
+				}
+				else if ((kLeft) || (kRight))
+				{
+					state = "HOOK";
+					//IsAttacking = true;
+					Hook = instance_create(x,y,oHook);
+					if facing = RIGHT{Hook.hspeed = 20;}else{Hook.hspeed = -20;}
+				}
+				else if (kUp)
+				{
+					state = "HOOK";
+					//IsAttacking = true;
+					Hook = instance_create(x,y,oHook);
+					Hook.vspeed = -20;
+				}
+				else
+				{
+					state = "GRAB"	
+					IsAttacking = true;
+					image_index = 0;
+				}
 			}
 			if (kDown)
 			{
@@ -388,7 +412,7 @@ kRageArt     = keyboard_check(kMyRageArt);
 	}
 
 
-	if(kDash) 
+	if((kDash) && (state != "PARRY")) 
 	{
 		if CanDash
 		{

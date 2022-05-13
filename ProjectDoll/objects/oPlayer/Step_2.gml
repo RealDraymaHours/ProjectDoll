@@ -1,5 +1,5 @@
 // Actual collision checks + movement
-if state != "CUTSCENE"
+if state != "HOOK"
 {
 	var i;
 

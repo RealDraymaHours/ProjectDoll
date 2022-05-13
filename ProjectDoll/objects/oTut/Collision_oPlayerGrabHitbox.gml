@@ -1,9 +1,13 @@
+/*
 if state != "STUNNED"
 {
 	oPlayer.state = "PARRIED";	
 }
 else
 {
+	
+	CameraZoom(5,6);
+	
 	state = "GRABBED";
 	instance_destroy(other);
 	Cutscene = instance_create(x,y,oCutscene);
@@ -28,7 +32,7 @@ else
 	instance_destroy(oPlayer);
 	
 	visible = false;
-	
-	
-
 }
+*/
+
+oPlayer.state = "PARRIED";	

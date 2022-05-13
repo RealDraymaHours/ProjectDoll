@@ -13,6 +13,7 @@ Stunned = false;
 
 PlayerX = 0;
 StartY = self.y;
+FarAway = false;
 
 StunnedAmount = 10;
 

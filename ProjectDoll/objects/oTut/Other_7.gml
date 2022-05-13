@@ -1,41 +1,54 @@
 /// @description 
-if ((Health) < (MaxHealth/2))
-{
-	rnd = irandom(4);	
-}
-else
-{
-	rnd = irandom(5);
-}
-
-
-
 if visible = true
 switch(state)
 {
 	#region IDLE
 	case("IDLE"):
-		switch(rnd)
+	
+		if distance_to_object(p) > 200
 		{
-			case(0):
-				state = "STAB"; SubState = "STAB1"; NoFlip = true;
-			break;
-			case(1):
-				if PrevState == "SLASH"{state = "STAB"; SubState = "STAB1" NoFlip = true;}
-				else{state = "SLASH";  SubState = "SLASH1";}
-			break;
-			case(2):
-				if PrevState == "JUMP"{state = "THROW";}else{state = "JUMP"; SubState = "JUMPSTART";}
-			break;
-			case(3):
-				if PrevState == "THROW"{state = "JUMP" SubState = "JUMPSTART";}else{state = "THROW"; NoFlip = true;}
-			break;
-			case(4):
-				if PrevState == "STOMP"{state = "THROW";}else{state = "STOMP"; SubState = "STOMPSTART";}
-			break;
-			case(5):
-				state = "WHIP"; SubState = "WHIP"; NoFlip = true;
-			break;
+			rnd = irandom(2);	
+			#region RandomFarWay1
+				switch(rnd)
+				{
+					case(0):
+						if PrevState == "JUMP"{state = "THROW";}else{state = "JUMP"; SubState = "JUMPSTART";}
+					break;
+					case(1):
+						if PrevState == "THROW"{state = "JUMP" SubState = "JUMPSTART";}else{state = "THROW"; NoFlip = true;}
+					break;
+					case(2):
+						if PrevState == "STOMP"{state = "THROW";}else{state = "STOMP"; SubState = "STOMPSTART";}
+					break;
+				}
+			#endregion
+			#region RandomFarWay2
+			#endregion
+		}
+		else
+		{
+			#region RandomClose1
+		
+				rnd = irandom(3);	
+				switch(rnd)
+				{
+					case(0):
+						state = "STAB"; SubState = "STAB1"; NoFlip = true;
+					break;
+					case(1):
+						if PrevState == "SLASH"{state = "STAB"; SubState = "STAB1" NoFlip = true;}
+						else{state = "SLASH";  SubState = "SLASH1";}
+					break;
+					case(2):
+						if PrevState == "THROW"{state = "JUMP" SubState = "JUMPSTART";}else{state = "THROW"; NoFlip = true;}
+					break;
+					case(3):
+						state = "WHIP"; SubState = "WHIP"; NoFlip = true;
+					break;
+				}
+			#endregion
+			#region RandomClose2
+			#endregion
 		}
 		PrevState = state;
 	break;

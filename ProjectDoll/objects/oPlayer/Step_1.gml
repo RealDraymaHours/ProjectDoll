@@ -1,5 +1,5 @@
 /// @desc check the ground
-if state != "CUTSCENE"
+if state != "HOOK"
 {
 	var temp;
 

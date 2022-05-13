@@ -1,4 +1,5 @@
 if visible
+
 if ((Recovery) && (FinisherMeter <= 0)){state = "IDLE"; Recovery = false;}
 
 if ((!Recovery) && (FinisherMeter >= MaxFinishMeter))

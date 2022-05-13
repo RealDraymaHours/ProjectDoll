@@ -49,6 +49,10 @@ if (event_data[? "message"] == "Create_TutorialBoss_Whip3Hitbox")
 	setEnemyHitbox(self,1, 1,"N",70,70,sTutorialBossWhip3Hitbox,make_color_rgb(255,0,255));
 }
 
+if (event_data[? "message"] == "FlipCheck")
+{
+	FlipCheck(self);
+}
 
 
 if (event_data[? "message"] == "Damage_Me_Small")

@@ -11,5 +11,6 @@ global.Parry = false;
 global.state = "IDLE";
 
 alarm[0] = 10;
+alarm[11] = 30;
 #endregion
 

@@ -8,3 +8,5 @@ if Left{Caster.x = x - 326;}else{Caster.x = x + 326;}
 layer_sequence_destroy(Iwannadie);
 instance_destroy();
 
+
+CameraReset(6);

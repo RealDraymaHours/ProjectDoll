@@ -9,12 +9,16 @@ function ShakeCamera(Time,Intensity){
 	}
 }
 
-function ChangeViewPoint(State){
+function CameraZoom(Amount, Speed)
+{
 
-	oCamera.state = State;	
+	oCamera.Multiplier = Amount;
+	oCamera.Speed = Speed;
 
 }
 
-function ResetViewPoint(){
-	self.state = "BASE";		
+function CameraReset(Speed)
+{
+	oCamera.Multiplier = 4;
+	oCamera.Speed = Speed;
 }

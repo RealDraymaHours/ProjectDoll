@@ -1,5 +1,65 @@
 #macro view view_camera[0]
 
+Bview_width = 3456/Multiplier;
+Bview_height = 1800/Multiplier;
+
+if view_width != Bview_width
+{
+	if view_width < Bview_width
+	{
+		if ((view_width - Bview_width) > (1.63 * Speed))
+		{
+			view_width = Bview_width;
+		}
+		else
+		{
+			view_width += 1.63 * Speed;
+		}
+		
+	}
+	else
+	{
+		if ((view_width - Bview_width) < (1.63 * Speed))
+		{
+			view_width = Bview_width;
+		}
+		else
+		{
+			view_width -= 1.63 * Speed;
+		}
+		
+	}
+}
+
+if view_height != Bview_height
+{
+	if view_height < Bview_height
+	{
+		if ((view_height - Bview_height) > (1 * Speed))
+		{
+			view_height = Bview_height;
+		}
+		else
+		{
+			view_height += 1 * Speed;
+		}
+		
+	}
+	else
+	{
+		if ((view_height - Bview_height) < (1 * Speed))
+		{
+			view_height = Bview_height;
+		}
+		else
+		{
+			view_height -= 1 * Speed;
+		}
+		
+	}
+}
+
+
 camera_set_view_size(view, view_width, view_height);
 
 switch(state)
