@@ -18,3 +18,4 @@ else
 
 GoBack = false;
 Parried = false;
+DistancePlayer = distance_to_object(p);

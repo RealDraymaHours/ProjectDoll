@@ -49,6 +49,7 @@ function ParryMelee(otherX,otherY,Caster,selfID)
 	audio_play_sound(PlayerParryWIP,1,false);
 
 	global.state = "IDLE";
+	oPlayer.sprite_index = sPlayerTearRipost;
 	global.Parry = false;
 	oPlayer.IsAttacking = false;
 	oPlayer.Staggered = false;
@@ -75,6 +76,7 @@ function ParryEffect(otherX, otherY, Color)
 	}
 	
 	global.state = "IDLE";
+	oPlayer.sprite_index = sPlayerTearRipost;
 	global.Parry = false;
 	oPlayer.IsAttacking = false;
 	oPlayer.Staggered = false;

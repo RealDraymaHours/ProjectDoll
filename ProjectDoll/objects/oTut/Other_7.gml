@@ -12,13 +12,14 @@ switch(state)
 				switch(rnd)
 				{
 					case(0):
-						if PrevState == "JUMP"{state = "THROW";}else{state = "JUMP"; SubState = "JUMPSTART";}
+						if PrevState == "JUMP"{state = "THROW"; SubState = "THROWSTART"; NoFlip = true;}
+						else{state = "JUMP"; SubState = "JUMPSTART";}
 					break;
 					case(1):
-						if PrevState == "THROW"{state = "JUMP" SubState = "JUMPSTART";}else{state = "THROW"; NoFlip = true;}
+						if PrevState == "THROW"{state = "JUMP" SubState = "JUMPSTART";}else{state = "THROW"; SubState = "THROWSTART"; NoFlip = true;}
 					break;
 					case(2):
-						if PrevState == "STOMP"{state = "THROW";}else{state = "STOMP"; SubState = "STOMPSTART";}
+						if PrevState == "STOMP"{state = "THROW"; SubState = "THROWSTART"; NoFlip = true;}else{state = "STOMP"; SubState = "STOMPSTART";}
 					break;
 				}
 			#endregion
@@ -40,10 +41,10 @@ switch(state)
 						else{state = "SLASH";  SubState = "SLASH1";}
 					break;
 					case(2):
-						if PrevState == "THROW"{state = "JUMP" SubState = "JUMPSTART";}else{state = "THROW"; NoFlip = true;}
+						if PrevState == "THROW"{state = "JUMP" SubState = "JUMPSTART";}else{state = "THROW"; SubState = "THROWSTART"; NoFlip = true;}
 					break;
 					case(3):
-						state = "WHIP"; SubState = "WHIP"; NoFlip = true;
+						if PrevState == "WHIP"{state = "SLASH";  SubState = "SLASH1";}else{state = "WHIP"; SubState = "WHIP"; NoFlip = true;}
 					break;
 				}
 			#endregion
@@ -56,6 +57,7 @@ switch(state)
 
 	case("STAB"):
 		state = "IDLE";
+		SubState = "IDLE";
 	break;
 	
 	#region SLASH
@@ -70,7 +72,7 @@ switch(state)
 			break;
 			case("SLASH3"):
 				state = "IDLE";
-				SubState = "JUMP";
+				SubState = "IDLE";
 			break;		
 		}
 		FlipCheck(self);

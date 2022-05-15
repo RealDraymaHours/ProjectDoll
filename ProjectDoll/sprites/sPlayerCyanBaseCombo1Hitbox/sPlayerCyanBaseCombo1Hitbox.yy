@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Hitboxes",
-    "path": "folders/Sprites/Player/TestSprites/Cyan/Hitboxes.yy",
+    "path": "folders/Sprites/Player/Cyan/BaseAttacks/Hitboxes.yy",
   },
   "resourceVersion": "1.0",
   "name": "sPlayerCyanBaseCombo1Hitbox",

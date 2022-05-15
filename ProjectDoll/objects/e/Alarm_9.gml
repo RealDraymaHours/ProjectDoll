@@ -7,7 +7,7 @@ if Recovery
 	}
 	else
 	{
-		FinisherMeter -= 20;
+		FinisherMeter -= 5;
 	}
 
 }

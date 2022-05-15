@@ -3,6 +3,11 @@ if (event_data[? "message"] == "Player_Parry_Off")
 	Parry = false;
 }
 
+if (event_data[? "message"] == "Player_Parry_On")
+{
+	Parry = true;
+}
+
 if (event_data[? "message"] == "Create_Player_Grab")
 {
 	setPlayerGrabHitbox();
@@ -113,37 +118,6 @@ if (event_data[? "message"] == "PlayerStinger")
 ///////////////////////////////////////////////////////////////////////////////////
 
 ///Hitboxes  
-//Ground
-if (event_data[? "message"] == "GroundUp_Create_Hitbox")
-{
-	SpriteCallToHitbox("GroundUp", Weapon);	
-}
-
-if (event_data[? "message"] == "GroundDir_Create_Hitbox")
-{
-	SpriteCallToHitbox("GroundDir", Weapon);	
-}
-
-if (event_data[? "message"] == "GroundDown_Create_Hitbox")
-{
-	SpriteCallToHitbox("GroundDown", Weapon);	
-}
-
-//Air
-if (event_data[? "message"] == "AirUp_Create_Hitbox")
-{
-	SpriteCallToHitbox("AirUp", Weapon);	
-}
-
-if (event_data[? "message"] == "AirDir_Create_Hitbox")
-{
-	SpriteCallToHitbox("AirDir", Weapon);	
-}
-
-if (event_data[? "message"] == "AirDown_Create_Hitbox")
-{
-	SpriteCallToHitbox("AirDown", Weapon);	
-}
 
 //Base
 if (event_data[? "message"] == "BaseCombo1_Create_Hitbox")
@@ -163,7 +137,10 @@ if (event_data[? "message"] == "BaseCombo3_Create_Hitbox")
 
 //RageArts
 
-
+if (event_data[? "message"] == "AirNeutral_Create_Hitbox")
+{
+	SpriteCallToHitbox("AirNeutral", Weapon);	
+}
 
 
 

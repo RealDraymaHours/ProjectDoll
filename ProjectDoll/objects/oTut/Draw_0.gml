@@ -35,5 +35,17 @@ if state != "PARRIED"
 		case("WHIP"):
 			draw_sprite_glow_ext(sTutorialBossWhipGlow,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha,make_color_rgb(255,0,255));	
 		break;
+		case("STAB1"):
+		case("STAB2"):
+		case("STAB3"):
+		case("STAB4"):
+			draw_sprite_glow_ext(sTutorialBossStabbingGlow,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha,make_color_rgb(255,0,255));	
+		break;
+		case("THROWSTART"):
+			draw_sprite_glow_ext(sTutorialBossThrowStartGlow,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha,make_color_rgb(255,0,255));	
+		break;
+		case("IDLE"):
+			state = "IDLE";
+		break;
 	}
 }

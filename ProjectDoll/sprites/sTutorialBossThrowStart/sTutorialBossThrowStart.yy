@@ -105,8 +105,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Tutorial",
-    "path": "folders/Sprites/Bosses/Tutorial.yy",
+    "name": "Throw",
+    "path": "folders/Sprites/Bosses/Tutorial/Throw.yy",
   },
   "resourceVersion": "1.0",
   "name": "sTutorialBossThrowStart",

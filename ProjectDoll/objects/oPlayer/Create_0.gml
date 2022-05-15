@@ -11,7 +11,7 @@ sParry = sPlayerTearParry;
 //Abilities
 Parry = false;
 
-Weapon = "Blue";
+Weapon = "Cyan";
 
 
 

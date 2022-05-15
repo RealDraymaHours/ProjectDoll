@@ -12,14 +12,9 @@ sBase1 = sPlayerCyanBaseCombo1;
 sBase2 = sPlayerCyanBaseCombo2;
 sBase3 = sPlayerCyanBaseCombo3;
 
-sGroundUp = sPlayerGrab;
-sAirUp = sPlayerGrab;
+sGroundUp = sPlayerTearGroundUp;
+sAirUp = sPlayerCyanAirNeutral;
 
-sAirDown = sPlayerTearAirDown;
-sGroundDown = sPlayerTearGroundDown;
-
-sGroundDir = sPlayerTearGroundDir;
-sAirDir = sPlayerTearAirDir;
 
 draw_text_color(x-100,y-100,state,c_white,c_white,c_white,c_white,1);
 //sParry = sPlayerParry;
@@ -29,7 +24,7 @@ draw_text_color(x-100,y-100,state,c_white,c_white,c_white,c_white,1);
 
 switch (state) {
     case "IDLE": 
-        sprite_index = sIdle;
+		if sprite_index != sPlayerTearRipost{sprite_index = sIdle;}     
     break;
     
     case "RUN": 
@@ -92,30 +87,6 @@ switch (state) {
 					ComboReset();
 				}
 				break;	
-				case(4):
-					if !onGround
-					{
-						sprite_index = sAirDir;
-						ComboForceEnd();
-					}
-					else
-					{
-						sprite_index = sGroundDir;
-						ComboForceEnd();
-					}
-				break;
-				case(3):	
-					if !onGround
-					{
-						sprite_index = sAirDown;
-						ComboForceEnd();
-					}
-					else
-					{
-						sprite_index = sGroundDown;
-						ComboForceEnd();
-					}
-				break;
 			}
 		}
 	break;
@@ -160,3 +131,8 @@ DrawTheGlow(sprite_index);
 	if (onGround)
 	draw_sprite_ext(sprite_index, image_index, x, y + (16 - 16 * yscale) * 0.25, facing * xscale, yscale, 0, c_white, image_alpha);    
 	else
+	
+	if Parry
+{
+	DrawParryGlow();
+}

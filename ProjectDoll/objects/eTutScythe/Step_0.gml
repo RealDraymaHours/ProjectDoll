@@ -7,7 +7,7 @@ if !Parried
 	}
 	else
 	{
-		if distance_to_object(oTut) < 150
+		if ((distance_to_object(oTut)) < (DistancePlayer + 20))
 		{
 				hspeed = myhf;	
 		}

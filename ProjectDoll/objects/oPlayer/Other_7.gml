@@ -25,3 +25,5 @@ if ((state == "PARRY") || (state == "PARRIED"))
 {
 	state = "IDLE";	
 }
+
+if sprite_index == sPlayerTearRipost{sprite_index = sPlayerTearIdle;}

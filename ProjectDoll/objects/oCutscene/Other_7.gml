@@ -1,8 +1,12 @@
-instance_create((x - 30),y + 51,oPlayer);
+instance_create((x - 25),y + 53,oPlayer);
+
 Caster.state = "IDLE";
+Caster.SubState = "IDLE";
 Caster.visible = true;
 
-if Left{Caster.x = x - 326;}else{Caster.x = x + 326;}
+Caster.x = x + 20;
+//318 706
+//-25 -53
 
 
 layer_sequence_destroy(Iwannadie);

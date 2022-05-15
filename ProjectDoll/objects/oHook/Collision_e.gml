@@ -2,7 +2,14 @@ if !other.Active
 {
 	if !MoveBack
 	{
-		x = other.x;
+		if other.image_xscale == 1
+		{
+			x = other.x - 10;
+		}
+		else
+		{
+			x = other.x + 10;
+		}
 		y = other.y;
 	
 		hspeed = 0;

@@ -25,7 +25,8 @@ kRageArt     = keyboard_check(kMyRageArt);
 
 
 if ((!IsAttacking) && (state != "DASH") && (state != "PARRY") && (state != "PARRIED") && (state != "HOOK"))
-	{
+{
+	#region MOVEMENT
 		///////////////////////////////////////////////////////////////////////////////
 		// Which form of accel/fric to apply
 		if (onGround) {	
@@ -181,21 +182,13 @@ if ((!IsAttacking) && (state != "DASH") && (state != "PARRY") && (state != "PARR
 
 		xscale = Approach(xscale, 1, 0.05);
 		yscale = Approach(yscale, 1, 0.05);
-
-
-		//Parry
-		if ((kParry) && (!Staggered))
-		{
-			state = "PARRY";
-			Parry = true;
-			Parried = false;
-			image_index = 0;
-		}
+#endregion
 
 
 		//Attacking
-		if ((!ComboEnd()) && (!Staggered))
-		{
+	if ((!ComboEnd()) && (!Staggered))
+	{
+		#region GRAB
 			if((kGrab) && (!instance_exists(oHook)))
 			{
 				if (kDown)
@@ -221,57 +214,34 @@ if ((!IsAttacking) && (state != "DASH") && (state != "PARRY") && (state != "PARR
 				}
 				else
 				{
-					state = "GRAB"	
-					IsAttacking = true;
+
+					state = "PARRY";
+					Parry = true;
+					Parried = false;
 					image_index = 0;
 				}
 			}
-			if (kDown)
-			{
-				if(kAttack)
-				{
-					state = "ATTACK";
-					IsAttacking = true;
-					image_index = 0;
-					ComboAdd(3,3);
-					ComboCounter++;
-				}
-			}
-			else if (kUp)
-			{
-	
-				if(kAttack)
-				{
-					state = "ATTACK";
-					IsAttacking = true;
-					image_index = 0;
-					ComboAdd(3,2);
-					ComboCounter++;
-				}
-			}
-			else if ((kLeft) || (kRight)) 
-			{
-				if(kAttack)
-				{
-					state = "ATTACK";
-					IsAttacking = true;
-					image_index = 0;
-					ComboAdd(3,4);	
-					ComboCounter++;
-				}
-			}
-			else
-			{
-				if(kAttack)
-				{
-					state = "ATTACK";
-					IsAttacking = true;
-					image_index = 0;
-					ComboAdd(3,1);	
-					ComboCounter++;
-				}
-			}
+			#endregion
+			
+		//Rage art
+		if kRageArt
+		{
+			state = "ATTACK";
+			IsAttacking = true;
+			image_index = 0;
+			ComboAdd(3,2);	
+			ComboCounter++;	
 		}
+		//Basic attack
+		else if(kAttack)
+		{
+			state = "ATTACK";
+			IsAttacking = true;
+			image_index = 0;
+			ComboAdd(3,1);	
+			ComboCounter++;
+		}
+	}
 
 		//Dashing
 		if(kDash) 
@@ -483,6 +453,7 @@ if ((!IsAttacking) && (state != "DASH") && (state != "PARRY") && (state != "PARR
 	//Tacking damage
 	if Staggered
 	{
+		Parry = false;
 		if alarm[1] == -1{alarm[1] = 20;}
 	}
 
@@ -501,5 +472,6 @@ if ((!IsAttacking) && (state != "DASH") && (state != "PARRY") && (state != "PARR
 		state = "IDLE";
 		sprite_index = sIdle;
 	}
+	
 //Audio
 audio_listener_position(x,y,0);

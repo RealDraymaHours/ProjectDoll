@@ -13,6 +13,22 @@ function DrawTheGlow(spriteindex)
 		case(sPlayerCyanBaseCombo3):
 			draw_sprite_glow_ext(sPlayerCyanBaseCombo3Glow,image_index, x, y, facing * 1, 1, dir, c_white, image_alpha, make_color_rgb(0,255,255));
 		break;
+		case(sPlayerCyanAirNeutral):
+			draw_sprite_glow_ext(sPlayerCyanAirNeutralGlow,image_index, x, y, facing * 1, 1, dir, c_white, image_alpha, make_color_rgb(0,255,255));
+		break;
+		case(sPlayerTearRipost):
+			draw_sprite_glow_ext(sPlayerTearRipostGlow,image_index, x, y, facing * 1, 1, dir, c_white, image_alpha, make_color_rgb(146,39,143));
+		break;
+		case(sPlayerTearParry):
+			draw_sprite_glow_ext(sPlayerTearParryGlow,image_index, x, y, facing * 1, 1, dir, c_white, image_alpha, make_color_rgb(146,39,143));
+		break;
 	}
 
 }
+
+/*
+function DrawParryGlow()
+{
+	draw_sprite_glow_ext(sPlayerTearParryGlow,image_index, x, y, facing * 1, 1, dir, c_white, image_alpha, make_color_rgb(146,39,143));
+}
+*/

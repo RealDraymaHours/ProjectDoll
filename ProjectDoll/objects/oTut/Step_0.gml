@@ -1,11 +1,11 @@
 if visible
 
-if ((Recovery) && (FinisherMeter <= 0)){state = "IDLE"; Recovery = false;}
-
 if ((!Recovery) && (FinisherMeter >= MaxFinishMeter))
 {
 	if state != "STUNNED"{audio_play_sound(PlayerWeaponHit1,100,false);}
+	FinisherMeter = MaxFinishMeter;
 	state = "STUNNED";
+	SubState = "STUNNED";
 	sprite_index = sTutorialBossParried;
 	instance_destroy(eTutScythe);
 	Recovery = true;
@@ -14,6 +14,8 @@ else
 {
 	if ((Parried) && (state != "STUNNED")){state = "PARRIED";}
 }
+
+if ((Recovery) && (FinisherMeter <= 0)){image_index = 0; state = "IDLE"; SubState = "IDLE"; Recovery = false;}
 
 if state != "STUNNED"
 {

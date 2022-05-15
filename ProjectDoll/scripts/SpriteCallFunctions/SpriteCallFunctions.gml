@@ -7,7 +7,7 @@ function SpriteCallToHitbox(Move, Weapon)
 {
 	switch(Weapon)
 	{
-		case("Blue"):
+		case("Cyan"):
 			MakeBlueHitbox(Move);
 		break;
 	}
@@ -104,18 +104,18 @@ Big = 20;
 			setPlayerHitbox(20,7,5,"V",-15,100,10,sPlayerTearGroundDownHitbox);
 		break;
 ///////////////////////////////////////////////////////////////////////////////////////////////////////	
-		case("AirUp"):
-			setPlayerHitbox(20,1,20,"H",0,0,1,sPlayerTearAirUpHitbox);
+		case("AirNeutral"):
+			setPlayerHitbox(20,20,5,0,0,0,0,sPlayerTearAirUpHitbox);
 		break;
 ///////////////////////////////////////////////////////////////////////////////////////////////////////	
 		case("AirDir"):
 			if oPlayer.facing = oPlayer.RIGHT
 			{
-				setPlayerHitbox(20,5,30,"H",20,500,10,sPlayerTearAirDirHitbox);
+				setPlayerHitbox(10,500,5,180,5,5,10,sPlayerCyanBaseCombo1Hitbox);
 			}
 			else
 			{
-				setPlayerHitbox(20,5,30,"H",-20,500,10,sPlayerTearAirDirHitbox);
+				setPlayerHitbox(10,500,5,180,5,5,10,sPlayerCyanBaseCombo1Hitbox);
 			}
 		break;
 ///////////////////////////////////////////////////////////////////////////////////////////////////////	

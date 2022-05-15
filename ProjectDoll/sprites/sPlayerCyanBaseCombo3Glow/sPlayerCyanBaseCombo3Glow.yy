@@ -98,7 +98,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Glows",
-    "path": "folders/Sprites/Player/TestSprites/Cyan/Glows.yy",
+    "path": "folders/Sprites/Player/Cyan/BaseAttacks/Glows.yy",
   },
   "resourceVersion": "1.0",
   "name": "sPlayerCyanBaseCombo3Glow",

@@ -134,8 +134,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Cyan",
-    "path": "folders/Sprites/Player/TestSprites/Cyan.yy",
+    "name": "BaseAttacks",
+    "path": "folders/Sprites/Player/Cyan/BaseAttacks.yy",
   },
   "resourceVersion": "1.0",
   "name": "sPlayerCyanBaseCombo2",
