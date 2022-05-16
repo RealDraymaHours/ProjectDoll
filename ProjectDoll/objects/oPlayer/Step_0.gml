@@ -1,12 +1,9 @@
+#region CONTROLS
 // Declare Temp Variables /////////////////////////////////////////////////////
 var kLeft, kRight, kUp, kDown, kJump, kJumpRelease, tempAccel, tempFric;
 var  kAttack, kDash, kRageArt,kAttackReleased, kParry, kGrab;
 ///////////////////////////////////////////////////////////////////////////////
-
-DistanceToBoss = distance_to_object(oTut);
-
 // Input //////////////////////////////////////////////////////////////////////
-
 kLeft        = keyboard_check(kMyLeft);
 kRight       = keyboard_check(kMyRight);
 kUp          = keyboard_check(kMyUp);
@@ -22,11 +19,13 @@ kAttackReleased = keyboard_check_released(kMyAttackLight);
 kGrab = keyboard_check(ord("D"));
 
 kRageArt     = keyboard_check(kMyRageArt);
-
+#endregion
 
 if ((!IsAttacking) && (state != "DASH") && (state != "PARRY") && (state != "PARRIED") && (state != "HOOK"))
 {
-	#region MOVEMENT
+	if !Staggered
+	{
+		#region MOVEMENT
 		///////////////////////////////////////////////////////////////////////////////
 		// Which form of accel/fric to apply
 		if (onGround) {	
@@ -183,7 +182,11 @@ if ((!IsAttacking) && (state != "DASH") && (state != "PARRY") && (state != "PARR
 		xscale = Approach(xscale, 1, 0.05);
 		yscale = Approach(yscale, 1, 0.05);
 #endregion
-
+	}
+	else
+	{
+		
+	}
 
 		//Attacking
 	if ((!ComboEnd()) && (!Staggered))
@@ -223,6 +226,7 @@ if ((!IsAttacking) && (state != "DASH") && (state != "PARRY") && (state != "PARR
 			}
 			#endregion
 			
+		#region ATTACK
 		//Rage art
 		if kRageArt
 		{
@@ -241,8 +245,10 @@ if ((!IsAttacking) && (state != "DASH") && (state != "PARRY") && (state != "PARR
 			ComboAdd(3,1);	
 			ComboCounter++;
 		}
+		#endregion
 	}
 
+#region DASH
 		//Dashing
 		if(kDash) 
 		{
@@ -318,6 +324,7 @@ if ((!IsAttacking) && (state != "DASH") && (state != "PARRY") && (state != "PARR
 			h = 0;
 			v = 0;		
 		}
+		
 		else if (state == "DASH")
 		{
 			if (!isDashing)
@@ -449,6 +456,8 @@ if ((!IsAttacking) && (state != "DASH") && (state != "PARRY") && (state != "PARR
 		
 		}
 	}
+#endregion
+
 
 	//Tacking damage
 	if Staggered

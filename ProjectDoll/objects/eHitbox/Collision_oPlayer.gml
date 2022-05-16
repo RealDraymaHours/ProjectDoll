@@ -4,8 +4,8 @@ if other.Parry
 {
 	
 	ParryMelee(other.x,other.y,Caster,self.id);
-	other.state = "IDLE";
 	other.Parry = false;
+	other.state = "RIPOST";
 
 }
 

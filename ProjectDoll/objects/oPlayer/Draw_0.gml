@@ -51,7 +51,7 @@ switch (state) {
             sprite_index = sSlide;  
     break;
 	case "PARRY":
-		sprite_index = sParry;
+		if sprite_index != sPlayerTearRipost{sprite_index = sParry;}
 	break;
 	case "PARRIED":
 		sprite_index = sStaggered;

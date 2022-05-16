@@ -48,7 +48,7 @@ function ParryMelee(otherX,otherY,Caster,selfID)
 	Caster.flashAlpha = 1;
 	audio_play_sound(PlayerParryWIP,1,false);
 
-	global.state = "IDLE";
+	global.state = "RIPOST";
 	oPlayer.sprite_index = sPlayerTearRipost;
 	global.Parry = false;
 	oPlayer.IsAttacking = false;
@@ -75,7 +75,7 @@ function ParryEffect(otherX, otherY, Color)
 		rageeff.EffectColor = Color;
 	}
 	
-	global.state = "IDLE";
+	global.state = "RIPOST";
 	oPlayer.sprite_index = sPlayerTearRipost;
 	global.Parry = false;
 	oPlayer.IsAttacking = false;
