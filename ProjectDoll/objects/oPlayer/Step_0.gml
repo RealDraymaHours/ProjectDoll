@@ -197,6 +197,7 @@ if ((!IsAttacking) && (state != "DASH") && (state != "PARRY") && (state != "PARR
 				if (kDown)
 				{
 					state = "HOOK";
+					Parry = false;
 					//IsAttacking = true;
 					Hook = instance_create(x,y,oHook);
 					Hook.vspeed = 20;
@@ -204,6 +205,7 @@ if ((!IsAttacking) && (state != "DASH") && (state != "PARRY") && (state != "PARR
 				else if ((kLeft) || (kRight))
 				{
 					state = "HOOK";
+					Parry = false;
 					//IsAttacking = true;
 					Hook = instance_create(x,y,oHook);
 					if facing = RIGHT{Hook.hspeed = 20;}else{Hook.hspeed = -20;}
@@ -211,6 +213,7 @@ if ((!IsAttacking) && (state != "DASH") && (state != "PARRY") && (state != "PARR
 				else if (kUp)
 				{
 					state = "HOOK";
+					Parry = false;
 					//IsAttacking = true;
 					Hook = instance_create(x,y,oHook);
 					Hook.vspeed = -20;
@@ -254,6 +257,7 @@ if ((!IsAttacking) && (state != "DASH") && (state != "PARRY") && (state != "PARR
 		{
 			if CanDash
 			{
+				Parry = false;
 				state = "DASH";
 				if(kUp)
 				{

@@ -53,7 +53,6 @@ function ParryMelee(otherX,otherY,Caster,selfID)
 	global.Parry = false;
 	oPlayer.IsAttacking = false;
 	oPlayer.Staggered = false;
-	sprite_index = oPlayer.sIdle;
 
 	//oPlayer.alarm[3] = 1;
 	instance_destroy(selfID);
@@ -63,7 +62,7 @@ function ParryEffect(otherX, otherY, Color)
 {
 	audio_play_sound(PlayerParryWIP,1,false);
 	
-	repeat(10)
+	repeat(5)
 	{
 		instance_create(otherX, otherY, oParryEffect);	
 		healeff = instance_create(otherX, otherY, oHealEffect);	
@@ -80,7 +79,6 @@ function ParryEffect(otherX, otherY, Color)
 	global.Parry = false;
 	oPlayer.IsAttacking = false;
 	oPlayer.Staggered = false;
-	oPlayer.sprite_index = oPlayer.sIdle;
 
 	
 }

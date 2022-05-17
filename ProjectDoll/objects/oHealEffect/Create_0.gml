@@ -3,7 +3,7 @@ depth = -90;
 X = 0.2;
 Y = 0.2;
 MoveToPlayer = false;
-Gain = 0.1;
+Gain = 0.05;
 
 EffectColor = make_color_rgb(255,0,255);
 
