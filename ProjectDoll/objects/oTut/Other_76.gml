@@ -44,7 +44,20 @@ if event_data[?"event_type"] == "sprite event"
 
 if (event_data[? "message"] == "Damage_Me_Small")
 {
-	if !visible{Health -= 20; ShakeCamera(2,4);}
+	if !visible{Health -= 5; ShakeCamera(2,4);}
+	
+	switch(irandom(2))
+	{
+		case(0):
+			audio_play_sound(PlayerWeaponHit1,100,false);
+		break;
+		case(1):
+			audio_play_sound(PlayerWeaponHit2,100,false);
+		break;
+		case(2):
+			audio_play_sound(PlayerWeaponHit3,100,false);
+		break;
+	}
 }
 
 if (event_data[? "message"] == "Damage_Me_Medium")
@@ -54,5 +67,18 @@ if (event_data[? "message"] == "Damage_Me_Medium")
 
 if (event_data[? "message"] == "Damage_Me_Big")
 {
-	if !visible{Health -= 120; ShakeCamera(4,8);}
+	if !visible{Health -= 120; ShakeCamera(12,12);}
+	
+	switch(irandom(2))
+	{
+		case(0):
+			audio_play_sound(PlayerWeaponHit1,100,false);
+		break;
+		case(1):
+			audio_play_sound(PlayerWeaponHit2,100,false);
+		break;
+		case(2):
+			audio_play_sound(PlayerWeaponHit3,100,false);
+		break;
+	}
 }

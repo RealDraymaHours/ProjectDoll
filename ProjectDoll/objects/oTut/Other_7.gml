@@ -147,4 +147,8 @@ switch(state)
 		state = "IDLE";
 		SubState = "IDLE";
 	break;
+	case("AFTERGRAB"):
+		state = "IDLE";
+		SubState = "IDLE";
+	break;
 }

@@ -105,17 +105,17 @@ Big = 20;
 		break;
 ///////////////////////////////////////////////////////////////////////////////////////////////////////	
 		case("AirNeutral"):
-			setPlayerHitbox(20,20,5,0,0,0,0,sPlayerTearAirUpHitbox);
+			setPlayerHitbox(20,200,5,0,0,0,0,sPlayerTearAirUpHitbox);
 		break;
 ///////////////////////////////////////////////////////////////////////////////////////////////////////	
 		case("AirDir"):
 			if oPlayer.facing = oPlayer.RIGHT
 			{
-				setPlayerHitbox(10,500,5,180,5,5,10,sPlayerCyanBaseCombo1Hitbox);
+				setPlayerHitbox(10,8000,5,180,5,5,10,sPlayerCyanBaseCombo1Hitbox);
 			}
 			else
 			{
-				setPlayerHitbox(10,500,5,180,5,5,10,sPlayerCyanBaseCombo1Hitbox);
+				setPlayerHitbox(10,8000,5,180,5,5,10,sPlayerCyanBaseCombo1Hitbox);
 			}
 		break;
 ///////////////////////////////////////////////////////////////////////////////////////////////////////	
