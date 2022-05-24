@@ -166,6 +166,9 @@ if state != "STUNNED"
 			case("GRABBED"):
 				sprite_index = sTutorialBossIdle;
 			break;
+			case("AFTERGRAB"):
+				sprite_index = sTutorialBossGrabGetUp;
+			break;
 		}
 	if Knockback
 	{

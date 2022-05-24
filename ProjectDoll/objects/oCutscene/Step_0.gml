@@ -3,8 +3,6 @@
 if StatSet
 {
 
-	Iwannadie = layer_sequence_create("Instances",x,y,seqTutorialBoss1Grab2);
-
-	
+	Iwannadie = layer_sequence_create("Instances",x,y,seqTutGrabMirror);
 	StatSet = false;
 }

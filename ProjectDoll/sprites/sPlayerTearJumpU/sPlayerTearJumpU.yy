@@ -81,8 +81,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "TestSprites",
-    "path": "folders/Sprites/Player/TestSprites.yy",
+    "name": "Jump",
+    "path": "folders/Sprites/Player/TestSprites/Jump.yy",
   },
   "resourceVersion": "1.0",
   "name": "sPlayerTearJumpU",

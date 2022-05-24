@@ -81,8 +81,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "TestSprites",
-    "path": "folders/Sprites/Player/TestSprites.yy",
+    "name": "Parry",
+    "path": "folders/Sprites/Player/TestSprites/Parry.yy",
   },
   "resourceVersion": "1.0",
   "name": "sPlayerTearRipostGlow",

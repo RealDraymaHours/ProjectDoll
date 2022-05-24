@@ -8,7 +8,7 @@ if !Parried
 else
 {
 	oTut.state = "CATCHSCYTHE";
-	oTut.SubState = "IDLE";	
+	oTut.SubState = "CATCHSCYTHE";	
 	oTut.alarm[8] = 40;
 	oTut.Knockback = true;
 	oTut.KnockbackStrenght = 1;

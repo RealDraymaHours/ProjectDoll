@@ -1,10 +1,10 @@
 ///@desc grab
 
-	//CameraZoom(5,6);
+	CameraZoom(5,6);
 	
 	state = "GRABBED";
 	Cutscene = instance_create(x,y,oCutscene);
-	Cutscene.sprite_index = sTutorialBoss1Grab23;
+	Cutscene.alarm[0] = 146;
 	
 	if p.x > x
 	{
