@@ -2,7 +2,13 @@
 
 if StatSet
 {
-
-	Iwannadie = layer_sequence_create("Instances",x,y,seqTutGrabMirror);
+	if Caster.image_xscale == 1
+	{
+		Iwannadie = layer_sequence_create("Instances",x,y,seqTutGrab1);
+	}
+	else
+	{
+		Iwannadie = layer_sequence_create("Instances",x,y,seqTutGrabMirror);
+	}
 	StatSet = false;
 }

@@ -6,19 +6,26 @@
 	Cutscene = instance_create(x,y,oCutscene);
 	Cutscene.alarm[0] = 146;
 	
-	if p.x > x
+	Cutscene.Caster = self;
+	
+	if image_xscale == 1
 	{
-		Cutscene.Left = true;
+		if collision_line(x, y, x + 240, y, oParSolid,false,false)
+		{
+				image_xscale = -1;
+		}
 	}
 	else
 	{
-		Cutscene.Left = false;
+		if collision_line(x, y, x - 240, y, oParSolid,false,false)
+		{
+				image_xscale = 1;
+		}
 	}
-	
 	
 	Cutscene.spawnX = x;
 	Cutscene.spawnY = y;
-	Cutscene.Caster = self;
+	
 	Cutscene.StatSet = true;
 	FinisherMeter = 0;
 	

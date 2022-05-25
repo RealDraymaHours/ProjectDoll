@@ -173,6 +173,7 @@
     {"id":{"name":"sTutorialBossSlash1","path":"sprites/sTutorialBossSlash1/sTutorialBossSlash1.yy",},"order":1,},
     {"id":{"name":"DeathZone","path":"objects/DeathZone/DeathZone.yy",},"order":3,},
     {"id":{"name":"sTutorialBossScythe","path":"sprites/sTutorialBossScythe/sTutorialBossScythe.yy",},"order":2,},
+    {"id":{"name":"sPlayerGrabArm","path":"sprites/sPlayerGrabArm/sPlayerGrabArm.yy",},"order":10,},
     {"id":{"name":"sParticleCottonDamage","path":"sprites/sParticleCottonDamage/sParticleCottonDamage.yy",},"order":1,},
     {"id":{"name":"sBlouterJumpBeforeDown","path":"sprites/sBlouterJumpBeforeDown/sBlouterJumpBeforeDown.yy",},"order":3,},
     {"id":{"name":"sSwordPlushNormal","path":"sprites/sSwordPlushNormal/sSwordPlushNormal.yy",},"order":0,},
