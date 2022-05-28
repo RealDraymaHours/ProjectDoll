@@ -1,5 +1,10 @@
 if visible
 
+if Health < 850
+{
+	Phase2 = true;	
+}
+
 if ((!Recovery) && (FinisherMeter >= MaxFinishMeter))
 {
 	if state != "STUNNED"{audio_play_sound(PlayerWeaponHit1,100,false);}
@@ -22,7 +27,8 @@ if state != "STUNNED"
 		switch(state)
 		{
 			case("IDLE"):
-				sprite_index = sTutorialBossIdle;
+				if Phase2{sprite_index = sTutorialBossIdle2;}else{sprite_index = sTutorialBossIdle;}
+				
 				hspeed = 0;
 				vspeed = 0;
 				NoFlip = false;
@@ -35,24 +41,24 @@ if state != "STUNNED"
 				switch(SubState)
 				{
 					case("SLASH1"):
-						sprite_index = sTutorialBossSlash1;
+						if Phase2{sprite_index = sTutorialBoss2Slash1}else{sprite_index = sTutorialBossSlash1;}
 					break;
 					case("SLASH2"):
-						sprite_index = sTutorialBossSlash2;
+						if Phase2{sprite_index = sTutorialBoss2Slash2}else{sprite_index = sTutorialBossSlash2;}
 					break;
 					case("SLASH3"):
-						sprite_index = sTutorialBossSlash3;
+						if Phase2{sprite_index = sTutorialBoss2Slash3}else{sprite_index = sTutorialBossSlash3;}
 					break;	
 				}
 			break;
 			case("THROW"):
 				if SubState != "THROWING"
 				{
-					sprite_index = sTutorialBossThrowStart;
+					if Phase2{sprite_index = sTutorialBossThrowStart2}else{sprite_index = sTutorialBossThrowStart;}
 				}
 				else
 				{
-					sprite_index = sTutorialBossThrow;	
+					if Phase2{sprite_index = sTutorialBossThrow2}else{sprite_index = sTutorialBossThrow;}	
 				}	
 			break;
 			case("JUMP"):		
@@ -96,21 +102,6 @@ if state != "STUNNED"
 							SubState = "WAITFOREND";
 						break;
 					}	
-			case("STOMP"):
-				switch(SubState)
-				{		
-					case("STOMPSTART"):
-						sprite_index = sTutorialBossStompingStart;
-					break;
-					case("STOMP"):
-						if distance_to_object(oPlayer) < 1{if alarm[1] == -1{ alarm[1] = 20; NoFlip = true;}};
-						sprite_index = sTutorialBossStomping;
-						move_towards_point(oPlayer.x,y,4);
-					break;
-					case("STOMPEND"):
-						sprite_index = sTutorialBossStompingEnd;
-					break;
-				}
 			break;
 			case("CATCHSCYTHE"):
 				sprite_index = sTutorialBossParried;
@@ -124,13 +115,13 @@ if state != "STUNNED"
 				switch(SubState)
 				{
 					case("SLASH1"):
-						sprite_index = sTutorialBossSlash1Parried;
+						if Phase2{sprite_index = sTutorialBossSlash1Parried}else{sprite_index = sTutorialBossSlash1Parried;}
 					break;
 					case("SLASH2"):
-						sprite_index = sTutorialBossSlash2Parried;
+						if Phase2{sprite_index = sTutorialBossSlash2Parried}else{sprite_index = sTutorialBossSlash2Parried;}
 					break;
 					case("SLASH3"):
-						sprite_index = sTutorialBossSlash3Parried;
+						if Phase2{sprite_index = sTutorialBossSlash3Parried}else{sprite_index = sTutorialBossSlash3Parried;}
 					break;
 					case("STAB1"):
 						image_index = 1;
@@ -169,6 +160,40 @@ if state != "STUNNED"
 			case("AFTERGRAB"):
 				sprite_index = sTutorialBossGrabGetUp;
 			break;
+			case("IRONMAIDEN"):
+				if Phase2{sprite_index = sTutorialBossIronMaiden2;}else{sprite_index = sTutorialBossIronMaiden;}
+			break;
+			case("HELL"):
+				sprite_index = sTutorialBossHell;
+			break;
+			case("CRAWL"):
+				switch(SubState)
+				{
+					case("CRAWLSTART"):
+						sprite_index = sTutorialBossCrawlStart;
+					break;
+					case("CRAWLGOING"):
+						NoFlip = true;
+						sprite_index = sTutorialBossCrawlGoing;
+						if (place_meeting(x + 20,y,oParSolid) && (self.hspeed = 6))
+						{
+							hspeed = -6;
+							image_xscale = 1;
+						}
+						else if ((place_meeting(x - 20,y,oParSolid)) && (self.hspeed = -6))
+						{			
+							hspeed = 6;
+							image_xscale = -1;
+						}
+					break;
+					case("CRAWLEND"):
+						sprite_index = sTutorialBossCrawlEnd;
+					break;
+				}
+
+				
+
+		break;
 		}
 	if Knockback
 	{

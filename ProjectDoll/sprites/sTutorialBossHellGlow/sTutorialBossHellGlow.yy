@@ -1,0 +1,163 @@
+{
+  "bboxMode": 2,
+  "collisionKind": 0,
+  "type": 0,
+  "origin": 9,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 181,
+  "bbox_right": 253,
+  "bbox_top": 181,
+  "bbox_bottom": 333,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 397,
+  "height": 330,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"8b13d98c-7823-4203-a20a-61a53abfcad5","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"8b13d98c-7823-4203-a20a-61a53abfcad5","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":{"name":"813d5133-ca54-48a6-86e7-18d08c6a35c0","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossHellGlow","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"8b13d98c-7823-4203-a20a-61a53abfcad5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"6cf05d2e-322e-4c44-a098-45c8a861c8c8","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"6cf05d2e-322e-4c44-a098-45c8a861c8c8","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":{"name":"813d5133-ca54-48a6-86e7-18d08c6a35c0","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossHellGlow","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"6cf05d2e-322e-4c44-a098-45c8a861c8c8","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"8a42a99c-e99d-443b-a080-2f4384d75984","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"8a42a99c-e99d-443b-a080-2f4384d75984","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":{"name":"813d5133-ca54-48a6-86e7-18d08c6a35c0","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossHellGlow","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"8a42a99c-e99d-443b-a080-2f4384d75984","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"5d8de49d-4ec2-4d1a-8000-95a78dfbb651","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"5d8de49d-4ec2-4d1a-8000-95a78dfbb651","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":{"name":"813d5133-ca54-48a6-86e7-18d08c6a35c0","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossHellGlow","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"5d8de49d-4ec2-4d1a-8000-95a78dfbb651","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"d3d75835-61f6-4454-b81c-cee72a1d03c2","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d3d75835-61f6-4454-b81c-cee72a1d03c2","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":{"name":"813d5133-ca54-48a6-86e7-18d08c6a35c0","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossHellGlow","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"d3d75835-61f6-4454-b81c-cee72a1d03c2","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3fbf026b-dfb6-430f-acf0-4b133e0bc6fc","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3fbf026b-dfb6-430f-acf0-4b133e0bc6fc","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":{"name":"813d5133-ca54-48a6-86e7-18d08c6a35c0","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossHellGlow","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"3fbf026b-dfb6-430f-acf0-4b133e0bc6fc","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"ee3a4d6a-4b08-46c3-a2f6-36453cd924f5","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"ee3a4d6a-4b08-46c3-a2f6-36453cd924f5","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":{"name":"813d5133-ca54-48a6-86e7-18d08c6a35c0","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossHellGlow","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"ee3a4d6a-4b08-46c3-a2f6-36453cd924f5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"1960062f-b429-4c96-9f97-112ffdefb1b9","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"1960062f-b429-4c96-9f97-112ffdefb1b9","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":{"name":"813d5133-ca54-48a6-86e7-18d08c6a35c0","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossHellGlow","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"1960062f-b429-4c96-9f97-112ffdefb1b9","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"ed53f26f-89be-443c-bf8f-7521d65bdcfb","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"ed53f26f-89be-443c-bf8f-7521d65bdcfb","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":{"name":"813d5133-ca54-48a6-86e7-18d08c6a35c0","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossHellGlow","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"ed53f26f-89be-443c-bf8f-7521d65bdcfb","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"aa0f4977-2270-420e-b058-9fc097c2878a","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"aa0f4977-2270-420e-b058-9fc097c2878a","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":{"name":"813d5133-ca54-48a6-86e7-18d08c6a35c0","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossHellGlow","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"aa0f4977-2270-420e-b058-9fc097c2878a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"4c4fe8ac-e405-4ba3-96a7-a147956469b9","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"4c4fe8ac-e405-4ba3-96a7-a147956469b9","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":{"name":"813d5133-ca54-48a6-86e7-18d08c6a35c0","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossHellGlow","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"4c4fe8ac-e405-4ba3-96a7-a147956469b9","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"d27a5d32-5b6c-4cb5-8926-cb86e7002f11","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d27a5d32-5b6c-4cb5-8926-cb86e7002f11","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":{"name":"813d5133-ca54-48a6-86e7-18d08c6a35c0","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossHellGlow","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"d27a5d32-5b6c-4cb5-8926-cb86e7002f11","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"510ace79-ea85-4094-b821-55809f154db5","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"510ace79-ea85-4094-b821-55809f154db5","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":{"name":"813d5133-ca54-48a6-86e7-18d08c6a35c0","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossHellGlow","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"510ace79-ea85-4094-b821-55809f154db5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"80f5e29e-fc86-42b9-8169-5249fc2c4dbf","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"80f5e29e-fc86-42b9-8169-5249fc2c4dbf","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":{"name":"813d5133-ca54-48a6-86e7-18d08c6a35c0","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossHellGlow","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"80f5e29e-fc86-42b9-8169-5249fc2c4dbf","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"04fc0b7d-2faf-467c-8424-d218bd3b81e3","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"04fc0b7d-2faf-467c-8424-d218bd3b81e3","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":{"name":"813d5133-ca54-48a6-86e7-18d08c6a35c0","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossHellGlow","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"04fc0b7d-2faf-467c-8424-d218bd3b81e3","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"691cf6b5-c79b-4862-bf3b-3782eb42e1a6","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"691cf6b5-c79b-4862-bf3b-3782eb42e1a6","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":{"name":"813d5133-ca54-48a6-86e7-18d08c6a35c0","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossHellGlow","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"691cf6b5-c79b-4862-bf3b-3782eb42e1a6","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"25a8257a-0c79-4b06-a170-b3801270c464","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"25a8257a-0c79-4b06-a170-b3801270c464","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":{"name":"813d5133-ca54-48a6-86e7-18d08c6a35c0","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossHellGlow","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"25a8257a-0c79-4b06-a170-b3801270c464","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"69e1d8e1-d9b0-4e11-a0c5-a4f6df567dae","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"69e1d8e1-d9b0-4e11-a0c5-a4f6df567dae","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":{"name":"813d5133-ca54-48a6-86e7-18d08c6a35c0","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossHellGlow","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"69e1d8e1-d9b0-4e11-a0c5-a4f6df567dae","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"68661bcc-669f-4caf-96f2-84b99aa48d10","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"68661bcc-669f-4caf-96f2-84b99aa48d10","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":{"name":"813d5133-ca54-48a6-86e7-18d08c6a35c0","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossHellGlow","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"68661bcc-669f-4caf-96f2-84b99aa48d10","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"43356f3d-4a61-4d60-99ba-b4cfc6909e2f","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"43356f3d-4a61-4d60-99ba-b4cfc6909e2f","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":{"name":"813d5133-ca54-48a6-86e7-18d08c6a35c0","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossHellGlow","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"43356f3d-4a61-4d60-99ba-b4cfc6909e2f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0b779cd2-2249-4dc0-99a9-0d8b6c678e61","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0b779cd2-2249-4dc0-99a9-0d8b6c678e61","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":{"name":"813d5133-ca54-48a6-86e7-18d08c6a35c0","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossHellGlow","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"0b779cd2-2249-4dc0-99a9-0d8b6c678e61","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"6bf4937b-b461-40bc-a031-aab487e8a01b","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"6bf4937b-b461-40bc-a031-aab487e8a01b","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"LayerId":{"name":"813d5133-ca54-48a6-86e7-18d08c6a35c0","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossHellGlow","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","name":"6bf4937b-b461-40bc-a031-aab487e8a01b","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"sTutorialBossHellGlow","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 10.0,
+    "playbackSpeedType": 0,
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 22.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"4e536f51-c655-45b6-bf6b-d68c5eecd705","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8b13d98c-7823-4203-a20a-61a53abfcad5","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f9360cba-9544-47cb-bf4f-4dde32f41b7d","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6cf05d2e-322e-4c44-a098-45c8a861c8c8","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9ec6e65a-8a8d-4758-af18-d82bd2a71727","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8a42a99c-e99d-443b-a080-2f4384d75984","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c77a7bcc-bade-49a1-9380-6f548f2c78fa","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5d8de49d-4ec2-4d1a-8000-95a78dfbb651","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"94aaec9e-8b3f-47f3-8659-d2dbaf0724cf","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d3d75835-61f6-4454-b81c-cee72a1d03c2","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d57ed22f-9d5a-4627-b6fa-41435045f52a","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3fbf026b-dfb6-430f-acf0-4b133e0bc6fc","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9d313223-5f16-447a-be5c-d8c6a9f2d8e7","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ee3a4d6a-4b08-46c3-a2f6-36453cd924f5","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"fc92ca85-558e-4fbd-9389-3b9581107856","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1960062f-b429-4c96-9f97-112ffdefb1b9","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"15362877-a62b-42a4-9cd6-82cc3dad1dfe","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ed53f26f-89be-443c-bf8f-7521d65bdcfb","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f2170d1d-8a52-4897-97f7-f130620c0c98","Key":9.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"aa0f4977-2270-420e-b058-9fc097c2878a","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"57567ecd-fa7d-4b9b-8913-8881dceaaa39","Key":10.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4c4fe8ac-e405-4ba3-96a7-a147956469b9","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a5a2a4cf-13ce-44b9-9c92-8a1fbcc8de3c","Key":11.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d27a5d32-5b6c-4cb5-8926-cb86e7002f11","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ba1333e5-1db7-41b0-b4b2-8f1f04cc93ff","Key":12.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"510ace79-ea85-4094-b821-55809f154db5","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d59e7023-951d-442e-871f-a9ab50725f05","Key":13.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"80f5e29e-fc86-42b9-8169-5249fc2c4dbf","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"770ca1fb-dcf3-4d8c-b260-47cafa25ac4d","Key":14.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"04fc0b7d-2faf-467c-8424-d218bd3b81e3","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d6406817-5395-47f5-b2a2-d8f36c7acf5b","Key":15.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"691cf6b5-c79b-4862-bf3b-3782eb42e1a6","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"43085b14-763a-4fc1-b294-5c0020ed2608","Key":16.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"25a8257a-0c79-4b06-a170-b3801270c464","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"228365e8-7eea-424d-8b5a-c854dae30d82","Key":17.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"69e1d8e1-d9b0-4e11-a0c5-a4f6df567dae","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"1c0b8fdd-c36b-40bc-a24e-24ffce701bc7","Key":18.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"68661bcc-669f-4caf-96f2-84b99aa48d10","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7dbbe876-9f20-4a82-9098-889163370a63","Key":19.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"43356f3d-4a61-4d60-99ba-b4cfc6909e2f","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"da1f7e9e-b0d0-440b-8ed7-27a61e4f3be0","Key":20.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0b779cd2-2249-4dc0-99a9-0d8b6c678e61","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7b433feb-12f5-4c6e-8d2b-1a88b82207dd","Key":21.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6bf4937b-b461-40bc-a031-aab487e8a01b","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+    ],
+    "visibleRange": null,
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1366,
+    "backdropHeight": 768,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 212,
+    "yorigin": 265,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"sTutorialBossHellGlow","path":"sprites/sTutorialBossHellGlow/sTutorialBossHellGlow.yy",},
+    "resourceVersion": "1.4",
+    "name": "sTutorialBossHellGlow",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Wave","resourceVersion":"1.0","name":"813d5133-ca54-48a6-86e7-18d08c6a35c0","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "nineSlice": null,
+  "parent": {
+    "name": "Hell",
+    "path": "folders/Sprites/Bosses/Tutorial/Hell.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "sTutorialBossHellGlow",
+  "tags": [],
+  "resourceType": "GMSprite",
+}

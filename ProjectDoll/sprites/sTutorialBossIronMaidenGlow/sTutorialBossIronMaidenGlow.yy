@@ -1,0 +1,163 @@
+{
+  "bboxMode": 0,
+  "collisionKind": 1,
+  "type": 0,
+  "origin": 9,
+  "preMultiplyAlpha": false,
+  "edgeFiltering": false,
+  "collisionTolerance": 0,
+  "swfPrecision": 2.525,
+  "bbox_left": 0,
+  "bbox_right": 396,
+  "bbox_top": 0,
+  "bbox_bottom": 329,
+  "HTile": false,
+  "VTile": false,
+  "For3D": false,
+  "width": 397,
+  "height": 330,
+  "textureGroupId": {
+    "name": "Default",
+    "path": "texturegroups/Default",
+  },
+  "swatchColours": null,
+  "gridX": 0,
+  "gridY": 0,
+  "frames": [
+    {"compositeImage":{"FrameId":{"name":"8b13d98c-7823-4203-a20a-61a53abfcad5","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"8b13d98c-7823-4203-a20a-61a53abfcad5","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":{"name":"38fcedd9-87ad-47e3-95b9-475abdbf77d7","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossIronMaidenGlow","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"8b13d98c-7823-4203-a20a-61a53abfcad5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"6cf05d2e-322e-4c44-a098-45c8a861c8c8","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"6cf05d2e-322e-4c44-a098-45c8a861c8c8","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":{"name":"38fcedd9-87ad-47e3-95b9-475abdbf77d7","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossIronMaidenGlow","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"6cf05d2e-322e-4c44-a098-45c8a861c8c8","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2fdad8d1-b57a-45c3-b780-664ccda262de","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2fdad8d1-b57a-45c3-b780-664ccda262de","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":{"name":"38fcedd9-87ad-47e3-95b9-475abdbf77d7","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossIronMaidenGlow","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"2fdad8d1-b57a-45c3-b780-664ccda262de","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"7b545da1-0087-49ab-8722-be3ed1cc7530","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"7b545da1-0087-49ab-8722-be3ed1cc7530","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":{"name":"38fcedd9-87ad-47e3-95b9-475abdbf77d7","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossIronMaidenGlow","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"7b545da1-0087-49ab-8722-be3ed1cc7530","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"9543f8ea-dd5b-498f-9f56-a23216cc8e02","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"9543f8ea-dd5b-498f-9f56-a23216cc8e02","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":{"name":"38fcedd9-87ad-47e3-95b9-475abdbf77d7","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossIronMaidenGlow","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"9543f8ea-dd5b-498f-9f56-a23216cc8e02","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"a77c492b-a48b-4296-9acc-9d0df6931d77","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"a77c492b-a48b-4296-9acc-9d0df6931d77","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":{"name":"38fcedd9-87ad-47e3-95b9-475abdbf77d7","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossIronMaidenGlow","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"a77c492b-a48b-4296-9acc-9d0df6931d77","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"a747ee80-730a-4b67-be7c-cfd6935fc632","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"a747ee80-730a-4b67-be7c-cfd6935fc632","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":{"name":"38fcedd9-87ad-47e3-95b9-475abdbf77d7","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossIronMaidenGlow","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"a747ee80-730a-4b67-be7c-cfd6935fc632","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3d815525-8309-4805-bd8c-3a271964eb39","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3d815525-8309-4805-bd8c-3a271964eb39","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":{"name":"38fcedd9-87ad-47e3-95b9-475abdbf77d7","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossIronMaidenGlow","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"3d815525-8309-4805-bd8c-3a271964eb39","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e2eb25b0-b319-496e-a4e8-e97a01c44c7c","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e2eb25b0-b319-496e-a4e8-e97a01c44c7c","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":{"name":"38fcedd9-87ad-47e3-95b9-475abdbf77d7","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossIronMaidenGlow","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"e2eb25b0-b319-496e-a4e8-e97a01c44c7c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"89a53a73-0f45-4c04-b0ca-a0fbbec60bde","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"89a53a73-0f45-4c04-b0ca-a0fbbec60bde","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":{"name":"38fcedd9-87ad-47e3-95b9-475abdbf77d7","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossIronMaidenGlow","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"89a53a73-0f45-4c04-b0ca-a0fbbec60bde","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"972577db-3597-426b-98e6-0f8535cfee35","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"972577db-3597-426b-98e6-0f8535cfee35","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":{"name":"38fcedd9-87ad-47e3-95b9-475abdbf77d7","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossIronMaidenGlow","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"972577db-3597-426b-98e6-0f8535cfee35","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"ae3f357d-a737-4f4f-9201-9f007a2dfe64","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"ae3f357d-a737-4f4f-9201-9f007a2dfe64","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":{"name":"38fcedd9-87ad-47e3-95b9-475abdbf77d7","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossIronMaidenGlow","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"ae3f357d-a737-4f4f-9201-9f007a2dfe64","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0d6a2d43-d3d2-4269-b4fa-4aa514f27c30","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0d6a2d43-d3d2-4269-b4fa-4aa514f27c30","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":{"name":"38fcedd9-87ad-47e3-95b9-475abdbf77d7","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossIronMaidenGlow","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"0d6a2d43-d3d2-4269-b4fa-4aa514f27c30","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"9d24bc40-5242-47ba-bb3c-6ebe541e25c5","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"9d24bc40-5242-47ba-bb3c-6ebe541e25c5","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":{"name":"38fcedd9-87ad-47e3-95b9-475abdbf77d7","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossIronMaidenGlow","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"9d24bc40-5242-47ba-bb3c-6ebe541e25c5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"938af6d7-116b-414b-9786-4d01bf1e3984","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"938af6d7-116b-414b-9786-4d01bf1e3984","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":{"name":"38fcedd9-87ad-47e3-95b9-475abdbf77d7","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossIronMaidenGlow","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"938af6d7-116b-414b-9786-4d01bf1e3984","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"175a4f91-86bd-4960-99ae-d7194bacfef4","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"175a4f91-86bd-4960-99ae-d7194bacfef4","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":{"name":"38fcedd9-87ad-47e3-95b9-475abdbf77d7","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossIronMaidenGlow","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"175a4f91-86bd-4960-99ae-d7194bacfef4","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"2c430f0f-7fa7-4624-84bc-6029507fc779","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"2c430f0f-7fa7-4624-84bc-6029507fc779","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":{"name":"38fcedd9-87ad-47e3-95b9-475abdbf77d7","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossIronMaidenGlow","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"2c430f0f-7fa7-4624-84bc-6029507fc779","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"7dc39a76-dff9-48f0-8896-2e6b2fb2306c","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"7dc39a76-dff9-48f0-8896-2e6b2fb2306c","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":{"name":"38fcedd9-87ad-47e3-95b9-475abdbf77d7","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossIronMaidenGlow","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"7dc39a76-dff9-48f0-8896-2e6b2fb2306c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"07c5ced9-a2b5-4d1d-afe6-1f9b6fc98408","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"07c5ced9-a2b5-4d1d-afe6-1f9b6fc98408","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":{"name":"38fcedd9-87ad-47e3-95b9-475abdbf77d7","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossIronMaidenGlow","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"07c5ced9-a2b5-4d1d-afe6-1f9b6fc98408","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"b9ad0b60-3c1f-40c2-aed1-a8544b16be5c","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"b9ad0b60-3c1f-40c2-aed1-a8544b16be5c","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":{"name":"38fcedd9-87ad-47e3-95b9-475abdbf77d7","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossIronMaidenGlow","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"b9ad0b60-3c1f-40c2-aed1-a8544b16be5c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"313d2c8c-b6bc-43f1-a77d-dfe2974a4383","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"313d2c8c-b6bc-43f1-a77d-dfe2974a4383","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":{"name":"38fcedd9-87ad-47e3-95b9-475abdbf77d7","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossIronMaidenGlow","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"313d2c8c-b6bc-43f1-a77d-dfe2974a4383","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"83117a79-231c-4cbc-abaa-0ca123ab02a7","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"83117a79-231c-4cbc-abaa-0ca123ab02a7","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"LayerId":{"name":"38fcedd9-87ad-47e3-95b9-475abdbf77d7","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sTutorialBossIronMaidenGlow","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","name":"83117a79-231c-4cbc-abaa-0ca123ab02a7","tags":[],"resourceType":"GMSpriteFrame",},
+  ],
+  "sequence": {
+    "spriteId": {"name":"sTutorialBossIronMaidenGlow","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},
+    "timeUnits": 1,
+    "playback": 1,
+    "playbackSpeed": 10.0,
+    "playbackSpeedType": 0,
+    "autoRecord": true,
+    "volume": 1.0,
+    "length": 22.0,
+    "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
+    "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
+    "tracks": [
+      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"75a8bfd0-77c8-4849-b2ce-03f225c78e92","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8b13d98c-7823-4203-a20a-61a53abfcad5","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"cb25425b-ecef-4f35-8ee7-c1ed39072550","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6cf05d2e-322e-4c44-a098-45c8a861c8c8","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4391c7fe-cc0c-456c-aee6-cf4aa04bfc0d","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2fdad8d1-b57a-45c3-b780-664ccda262de","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3118497f-8b58-465e-90b6-e06907694cfe","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7b545da1-0087-49ab-8722-be3ed1cc7530","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"797210ee-0109-449a-ae78-59b8d910a663","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9543f8ea-dd5b-498f-9f56-a23216cc8e02","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"03184c46-c4d0-4feb-b7d6-5c09bc02d1c1","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a77c492b-a48b-4296-9acc-9d0df6931d77","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"fdf0417e-1fe2-4208-ac14-6c49f7767543","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a747ee80-730a-4b67-be7c-cfd6935fc632","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"71b0d143-c3f2-42a9-9090-b4e0855d03d9","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3d815525-8309-4805-bd8c-3a271964eb39","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"78ee419e-a795-4849-a3fb-0fc162981d38","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e2eb25b0-b319-496e-a4e8-e97a01c44c7c","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a43c3710-90c7-4b8a-a2b3-42cd77c59ed2","Key":9.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"89a53a73-0f45-4c04-b0ca-a0fbbec60bde","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5b8b66f6-58f5-4159-b512-ad2e20e37f49","Key":10.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"972577db-3597-426b-98e6-0f8535cfee35","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"bb9083c7-e632-484b-86c4-55b666995cc8","Key":11.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ae3f357d-a737-4f4f-9201-9f007a2dfe64","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b0ac2b7c-0eb8-4ae4-b9c5-411b6b7061de","Key":12.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0d6a2d43-d3d2-4269-b4fa-4aa514f27c30","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7f470189-4667-44df-9360-18a034d1a0af","Key":13.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9d24bc40-5242-47ba-bb3c-6ebe541e25c5","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e3d34c57-f3ee-4b69-a6bf-8c8a33589f0e","Key":14.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"938af6d7-116b-414b-9786-4d01bf1e3984","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c7bc82c7-b962-44bd-aee5-c3baba928722","Key":15.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"175a4f91-86bd-4960-99ae-d7194bacfef4","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6c718c23-d02e-4fcf-81b3-2f5ce5b3e07a","Key":16.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"2c430f0f-7fa7-4624-84bc-6029507fc779","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"fb2392f8-44c7-4eb3-abf5-7ebb6b5ea74d","Key":17.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7dc39a76-dff9-48f0-8896-2e6b2fb2306c","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ea8e171c-487e-4daa-8153-b0372978a229","Key":18.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"07c5ced9-a2b5-4d1d-afe6-1f9b6fc98408","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"a53ce63a-24f1-46b0-9270-c10fe555f77f","Key":19.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b9ad0b60-3c1f-40c2-aed1-a8544b16be5c","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"67ef3a68-295e-4b48-94f9-a4b087edc1f9","Key":20.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"313d2c8c-b6bc-43f1-a77d-dfe2974a4383","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"15c6e9c1-df16-40f9-9545-4c2aed390751","Key":21.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"83117a79-231c-4cbc-abaa-0ca123ab02a7","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+    ],
+    "visibleRange": null,
+    "lockOrigin": false,
+    "showBackdrop": true,
+    "showBackdropImage": false,
+    "backdropImagePath": "",
+    "backdropImageOpacity": 0.5,
+    "backdropWidth": 1366,
+    "backdropHeight": 768,
+    "backdropXOffset": 0.0,
+    "backdropYOffset": 0.0,
+    "xorigin": 221,
+    "yorigin": 262,
+    "eventToFunction": {},
+    "eventStubScript": null,
+    "parent": {"name":"sTutorialBossIronMaidenGlow","path":"sprites/sTutorialBossIronMaidenGlow/sTutorialBossIronMaidenGlow.yy",},
+    "resourceVersion": "1.4",
+    "name": "sTutorialBossIronMaidenGlow",
+    "tags": [],
+    "resourceType": "GMSequence",
+  },
+  "layers": [
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"38fcedd9-87ad-47e3-95b9-475abdbf77d7","tags":[],"resourceType":"GMImageLayer",},
+  ],
+  "nineSlice": null,
+  "parent": {
+    "name": "IronMaiden",
+    "path": "folders/Sprites/Bosses/Tutorial/IronMaiden.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "sTutorialBossIronMaidenGlow",
+  "tags": [],
+  "resourceType": "GMSprite",
+}

@@ -4,11 +4,27 @@ switch(state)
 {
 	#region IDLE
 	case("IDLE"):
-	
-		if distance_to_object(p) > 200
+		if distance_to_object(p) > 130
 		{
-			rnd = irandom(2);	
-			#region RandomFarWay1
+			
+			if !Phase2
+			{
+				rnd = irandom(2);	
+				switch(rnd)
+				{
+					case(0):
+						if PrevState == "JUMP"{state = "THROW"; SubState = "THROWSTART"; NoFlip = true;}
+						else{state = "JUMP"; SubState = "JUMPSTART";}
+					break;
+					case(1):
+						if PrevState == "THROW"{state = "JUMP" SubState = "JUMPSTART";}else{state = "THROW"; SubState = "THROWSTART"; NoFlip = true;}
+					break;
+
+				}
+			}
+			else
+			{
+				rnd = irandom(2);	
 				switch(rnd)
 				{
 					case(0):
@@ -19,22 +35,49 @@ switch(state)
 						if PrevState == "THROW"{state = "JUMP" SubState = "JUMPSTART";}else{state = "THROW"; SubState = "THROWSTART"; NoFlip = true;}
 					break;
 					case(2):
-						if PrevState == "STOMP"{state = "THROW"; SubState = "THROWSTART"; NoFlip = true;}else{state = "STOMP"; SubState = "STOMPSTART";}
+						if PrevState == "CRAWL"{state = "HELL" SubState = "HELL"; NoFlip = true;}else{state = "CRAWL"; SubState = "CRAWLSTART"; NoFlip = true;}
 					break;
+					case(3):
+						if PrevState == "HELL"{state = "CRAWL"; SubState = "CRAWLSTART"; NoFlip = true;}else{state = "HELL" SubState = "HELL"; NoFlip = true;}
+					break;
+
 				}
-			#endregion
-			#region RandomFarWay2
-			#endregion
+			}
+			
 		}
 		else
 		{
-			#region RandomClose1
 		
-				rnd = irandom(3);	
+		if Phase2
+		{
+			rnd = irandom(4);	
 				switch(rnd)
 				{
 					case(0):
-						state = "STAB"; SubState = "STAB1"; NoFlip = true;
+						if PrevState == "SLASH"{state = "STAB"; SubState = "STAB1" NoFlip = true;}
+						else{state = "SLASH";  SubState = "SLASH1";}
+					break;
+					case(1):
+						if PrevState == "THROW"{state = "JUMP" SubState = "JUMPSTART";}else{state = "THROW"; SubState = "THROWSTART"; NoFlip = true;}
+					break;
+					case(2):
+						if PrevState == "WHIP"{state = "SLASH";  SubState = "SLASH1";}else{state = "WHIP"; SubState = "WHIP"; NoFlip = true;}
+					break;
+					case(3):
+						if PrevState == "IRONMAIDEN"{state = "THROW"; SubState = "THROWSTART"; NoFlip = true;}else{state = "IRONMAIDEN"; SubState = "IRONMAIDEN";}
+					break;
+					case(4):
+						state = "HELL"; SubState = "HELL";
+					break;
+				}
+		}
+		else
+		{
+				rnd = irandom(5);	
+				switch(rnd)
+				{
+					case(0):
+						if PrevState == "STAB"{state = "SLASH";  SubState = "SLASH1";}else{state = "STAB"; SubState = "STAB1"; NoFlip = true;}
 					break;
 					case(1):
 						if PrevState == "SLASH"{state = "STAB"; SubState = "STAB1" NoFlip = true;}
@@ -44,14 +87,12 @@ switch(state)
 						if PrevState == "THROW"{state = "JUMP" SubState = "JUMPSTART";}else{state = "THROW"; SubState = "THROWSTART"; NoFlip = true;}
 					break;
 					case(3):
-						if PrevState == "WHIP"{state = "SLASH";  SubState = "SLASH1";}else{state = "WHIP"; SubState = "WHIP"; NoFlip = true;}
+						if PrevState == "IRONMAIDEN"{state = "THROW"; SubState = "THROWSTART"; NoFlip = true;}else{state = "IRONMAIDEN"; SubState = "IRONMAIDEN";}
 					break;
 				}
-			#endregion
-			#region RandomClose2
-			#endregion
-		}
-		PrevState = state;
+		}			
+}
+	PrevState = state;
 	break;
 	#endregion
 
@@ -147,8 +188,39 @@ switch(state)
 		state = "IDLE";
 		SubState = "IDLE";
 	break;
-	case("AFTERGRAB"):
+	case("IRONMAIDEN"):
+		state = "IDLE";
+		SubState = "IDLE";
+		depth = oPlayer.depth + 1;
+	break;
+	case("CRAWL"):
+		if SubState == "CRAWLSTART"
+		{
+			alarm[1] = 250;
+			SubState = "CRAWLGOING";
+			if x < p.x
+			{
+				hspeed = 6;
+			}
+			else
+			{
+				hspeed = -6;
+			}	
+		}
+		else if SubState == "CRAWLEND"
+		{
+				state = "IDLE";
+				SubState = "IDLE";
+		}
+	break;
+	case("HELL"):
 		state = "IDLE";
 		SubState = "IDLE";
 	break;
+}
+
+if ((state = "AFTERGRAB") || (SubState == "AFTERGRAB"))
+{
+	state = "IDLE";
+	SubState = "IDLE";
 }

@@ -6,6 +6,7 @@ if other.Parry
 	ParryMelee(other.x,other.y,Caster,self.id);
 	other.Parry = false;
 	other.state = "RIPOST";
+	ShakeCamera(4,8);
 
 }
 

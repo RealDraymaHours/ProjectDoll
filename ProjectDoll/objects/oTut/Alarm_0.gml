@@ -13,8 +13,10 @@ Stunned = false;
 
 PlayerX = 0;
 StartY = self.y;
-FarAway = false;
+Bullets = 0;
 
+
+Phase2 = false;	
 StunnedAmount = 10;
 
 ReleaseStuff = false;

@@ -47,5 +47,11 @@ if state != "PARRIED"
 		case("IDLE"):
 			state = "IDLE";
 		break;
+		case("IRONMAIDEN"):
+			draw_sprite_glow_ext(sTutorialBossIronMaidenGlow,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha,make_color_rgb(255,0,255));	
+		break;
+		case("HELL"):
+			draw_sprite_glow_ext(sTutorialBossHellGlow,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha,make_color_rgb(255,0,255));	
+		break;
 	}
 }

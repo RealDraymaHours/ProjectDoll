@@ -54,3 +54,20 @@ function setEnemyHitbox(Enemy, StunnedAmount, Damage,KnockBackDir, KnockbackAcc,
 	
 	tempHitBox.StatsSet = true;
 }
+
+function setEnemyHitboxPERIL(Enemy, Damage,KnockBackDir, KnockbackAcc, KnockbackFric, HitBoxSprite)
+{
+	tempHitBox = instance_create(Enemy.x, Enemy.y, eHitboxPERIL);
+	
+	tempHitBox.Damage = Damage;
+	tempHitBox.sprite_index = HitBoxSprite;
+	tempHitBox.image_xscale = Enemy.image_xscale;
+	tempHitBox.image_yscale = Enemy.image_yscale;
+	tempHitBox.Caster = Enemy;
+	
+	tempHitBox.KnockbackAcc = KnockbackAcc;
+	tempHitBox.KnockbackFric = KnockbackFric;
+	tempHitBox.KnockbackDir = KnockBackDir;
+	
+	tempHitBox.StatsSet = true;
+}
