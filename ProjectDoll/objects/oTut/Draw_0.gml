@@ -27,10 +27,14 @@ if state != "PARRIED"
 			draw_sprite_glow_ext(sTutorialBossSlash1Glow,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha,make_color_rgb(255,0,255));	
 		break;
 		case("SLASH2"):
-			draw_sprite_glow_ext(sTutorialBossSlash2Glow,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha,make_color_rgb(255,0,255));	
+			zespr = sTutorialBossSlash2Glow
+			if Phase2{zespr = sTutorialBoss2Slash2Glow}
+			draw_sprite_glow_ext(zespr,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha,make_color_rgb(255,0,255));	
 		break;
 		case("SLASH3"):
-			draw_sprite_glow_ext(sTutorialBossSlash3Glow,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha,make_color_rgb(255,0,255));	
+			zespr = sTutorialBossSlash3Glow
+			if Phase2{zespr = sTutorialBoss2Slash3Glow;}
+			draw_sprite_glow_ext(zespr,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha,make_color_rgb(255,0,255));	
 		break;
 		case("WHIP"):
 			draw_sprite_glow_ext(sTutorialBossWhipGlow,image_index,x,y,image_xscale,image_yscale,image_angle,image_blend,image_alpha,make_color_rgb(255,0,255));	
